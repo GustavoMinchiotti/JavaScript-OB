@@ -1,5 +1,5 @@
 # JavaScript OB
-
+## Clase 1 presentación
 En la primer clase hablo de la teoría que tipo de lenguaje es Js y recomendó plugins los cuales instalé.
 
 De ellos Quokka es el único que no estaba usando.
