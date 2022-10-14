@@ -4,6 +4,8 @@
   "description": "Primer proyecto con node en Open Bootcamp",
   "main": "index.js",
   "scripts": {
+    "start":"node index.js",
+    "saludar":"node hola_mundo.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [

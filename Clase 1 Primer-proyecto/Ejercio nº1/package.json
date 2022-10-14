@@ -1,0 +1,12 @@
+{
+  "name": "ejercicio_n1",
+  "version": "1.0.0",
+  "description": "primer tarea del curso",
+  "main": "index.js",
+  "scripts": {
+    "start":"node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gustavo Minchiotti",
+  "license": "ISC"
+}

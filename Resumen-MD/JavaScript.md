@@ -10,6 +10,7 @@ De ellos Quokka es el único que no estaba usando.
 Básicamente, va marcando en tiempo real los errores de código. 
 
 Se debe abrir el archivo en Quokka para que funcione.
+
 ![img_1.png](img_1.png)
 
 Luego de usarlo se guarda como un archivo `.Js` y lo transforma en un archivo normal.
@@ -52,6 +53,7 @@ Desde el CMD voy a crear una carpeta dentro de la ya creada para esta materia y 
 ![img_4.png](img_4.png)
 
 * Donde dice Package name es una pregunta, al poner hola-mundo le digo que ese es el nombre del paquete
+
 ![img_5.png](img_5.png)
 * Description del proyecto
 
@@ -85,4 +87,55 @@ Una de las formas de ejecutarlo es a través de node, en la terminal escribo: `n
 
 ![img_13.png](img_13.png)   
 
+#### Esta prueba la hice el dia posterior y antes de cursar lo de UTN
+
+![img_14.png](img_14.png)
+
+![img_15.png](img_15.png)
+
+
 ### Ejecución y comentarios
+
+mailen.brandao@gmail.com
+ profe UX/UI
+
+**Scripts == guiones** Son código que se va a ejecutar 
+
+Desde la terminal podemos ejecutar los scripts del archivo `package.json` por ejemplo con la sentencia:` npm run + monbre del script` 
+en este caso de ejemplo solo hay un script que es "test".
+
+![img_16.png](img_16.png)
+
+![img_17.png](img_17.png) 
+
+Lo que vemos es que a través de la terminal nos mostró lo que hay en test, si fuera un script más complejo del mismo 
+modo sería ejecutado.
+
+Como ejemplo aunque esto no se usa, inicio desde la terminal node `package.json` al archivo `hola_mundo`. 
+Hice que el paquete lo abra.
+
+![img_18.png](img_18.png)  ![img_19.png](img_19.png)
+
+* Lo habitual sería ir al index del proyecto donde estaría el programa.
+* Importantísimo anteponer `node` antes del nombre de archivo .js.
+
+![img_20.png](img_20.png) 
+
+![img_21.png](img_21.png)
+
+![img_22.png](img_22.png)
+
+### primer tarea 
+La carpeta la cree en windows y deje más espacios en blanco en él `npm init`, luego seguí todos los pasos de esta guía.
+
+![img_23.png](img_23.png)
+1. A continuación cree el `index.js` y pegué la frase de saludo de OB.
+2. Cree el script start en el paquete `.json` 
+
+![img_24.png](img_24.png)
+
+3. Ejecute el script. con el comando: `npm start`.
+
+![img_25.png](img_25.png)
+
+## Clase 2
