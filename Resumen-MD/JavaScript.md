@@ -96,9 +96,6 @@ Una de las formas de ejecutarlo es a través de node, en la terminal escribo: `n
 
 ### Ejecución y comentarios
 
-mailen.brandao@gmail.com
- profe UX/UI
-
 **Scripts == guiones** Son código que se va a ejecutar 
 
 Desde la terminal podemos ejecutar los scripts del archivo `package.json` por ejemplo con la sentencia:` npm run + monbre del script` 
@@ -138,4 +135,94 @@ La carpeta la cree en windows y deje más espacios en blanco en él `npm init`, 
 
 ![img_25.png](img_25.png)
 
-## Clase 2
+## Clase 2 Sintaxis variables y palabras reservadas de JS
+### Tipado en JS y tipos primitivos
+https://www.w3schools.com/js/js_typeof.asp
+
+**Tipado inferido** la variable será definida al momento de ser interpretada. Entre sus **ventajas** está la velocidad para 
+escribir el código y entre las **desventajas** que el ide no nos va a dar error si cambiamos por ejemplo un string a int, 
+puede ocasionar problemas.
+
+Los tipos en Js tienen 2 grandes grupos: primitivos y objetos.
+
+**_Primitivos:_** 
+1. Número (con o sin decimal, no hay float en JS)
+2. String
+3. Booleano
+4. Nulo (crea una variable con un espacio vacío en memoria)
+5. Indefinido
+
+**_Objetos:_**
+
+![img_26.png](img_26.png)
+
+### Declaración de variables y escritura dinámica
+4 Ways to Declare a JavaScript Variable:
+* Using var
+* Using let
+* Using const
+* Using nothing
+
+**When to Use JavaScript var?**
+
+Always declare JavaScript variables with var,let, or const.
+
+The var keyword is used in all JavaScript code from 1995 to 2015.
+
+The let and const keywords were added to JavaScript in 2015.
+
+If you want your code to run in older browsers, you must use var.
+
+**When to Use JavaScript const?**
+
+If you want a general rule: always declare variables with const.
+
+If you think the value of the variable can change, use let.
+
+**JavaScript Identifiers**
+
+All JavaScript variables must be identified with unique names.
+
+These unique names are called identifiers.
+
+Identifiers can be short names (like x and y) or more descriptive names (age, sum, totalVolume).
+
+The general rules for constructing names for variables (unique identifiers) are:
+
+* Names can contain letters, digits, underscores, and dollar signs.
+* Names must begin with a letter.
+* Names can also begin with $ and _ (but we will not use it in this tutorial).
+* Names are case-sensitive (y and Y are different variables).
+* Reserved words (like JavaScript keywords) cannot be used as names.
+
+![img_27.png](img_27.png)
+
+Si afecto una variable declarada con var dentro de una función por ejemplo esta cambia de manera global. 
+
+Si afecto una variable declarada con let dentro de una función esta solo cambia dentro de la misma.
+
+### Notación en JavaScript
+Detalles en el código.
+
+### Listas, Objetos y Fechas en JS
+Las listas se declaran de 2 maneras detalles en el código.
+
+![img_28.png](img_28.png)
+
+![img_29.png](img_29.png)
+
+En el caso lista3 al poner 4 me crea una lista vacía con 4 posiciones.
+
+![img_30.png](img_30.png) Agrego valores dentro del array ![img_31.png](img_31.png)
+
+#### importante no podia abrir la carpeta con espacio porque eran necesarias las comillas
+![img_32.png](img_32.png)
+
+*///
+
+![img_33.png](img_33.png)
+
+Me costó mucho hacer correr el script en la terminal, con npm no pude luego de agregarlo correctamente a la carpeta 
+Clase 1 y al `.Json` ahora lo voy a correr de carpeta para probar si funciona en Clase 2 que es donde debe ir.
+* Lo cambié de carpeta y funcionó 
+* Sin estar agregado al archivo `Package.json` funciona igual
