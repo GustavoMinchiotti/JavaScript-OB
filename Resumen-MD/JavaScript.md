@@ -205,6 +205,7 @@ Si afecto una variable declarada con let dentro de una función esta solo cambia
 Detalles en el código.
 
 ### Listas, Objetos y Fechas en JS
+#### Listas
 Las listas se declaran de 2 maneras detalles en el código.
 
 ![img_28.png](img_28.png)
@@ -222,7 +223,110 @@ En el caso lista3 al poner 4 me crea una lista vacía con 4 posiciones.
 
 ![img_33.png](img_33.png)
 
-Me costó mucho hacer correr el script en la terminal, con npm no pude luego de agregarlo correctamente a la carpeta 
+Me costó mucho hacer correr el script en la terminal, con _**npm** no pude_ luego de agregarlo correctamente a la carpeta 
 Clase 1 y al `.Json` ahora lo voy a correr de carpeta para probar si funciona en Clase 2 que es donde debe ir.
 * Lo cambié de carpeta y funcionó 
 * Sin estar agregado al archivo `Package.json` funciona igual
+* Por último si estoy fuera de la carpeta del archivo asi sea la carpeta superior NO funciona.
+
+#### Objetos
+https://www.w3schools.com/js/js_objects.asp HAY UNA BUENA EXPLICACIÓN DE THIS
+
+In real life, a car is an object.
+
+A car has properties like weight and color, and methods like start and stop:
+
+![img_34.png](img_34.png)   
+
+* All cars have the same properties, but the property values differ from car to car.
+
+* All cars have the same methods, but the methods are performed at different times.
+
+* Objects are variables too. But objects can contain many values.
+
+* This code assigns many values (Fiat, 500, white) to a variable named car:
+`const car = {type:"Fiat", model:"500", color:"white"};`
+
+Object Definition
+
+You define (and create) a JavaScript object with an object literal: const person = 
+`{firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};`
+
+Spaces and line breaks are not important. An object definition can span multiple lines: 
+
+![img_39.png](img_39.png)
+
+**Accessing Object Properties**
+
+You can access object properties in two ways:
+
+* `objectName.propertyName`
+* `objectName["propertyName"]`
+
+![img_36.png](img_36.png)
+
+**Object Methods**
+
+Objects can also have methods.
+
+Methods are actions that can be performed on objects.
+
+Methods are stored in properties as function definitions.
+
+![img_35.png](img_35.png)
+
+![img_37.png](img_37.png)   
+
+![img_38.png](img_38.png)   
+
+In the example above, `this` refers to the person object.
+(I.E.== O SEA) `this.firstName` means the _firstName_ property of _this._
+I.E.` this.firstName` means the _firstName_ property of _person_.
+
+![img_40.png](img_40.png)
+
+![img_41.png](img_41.png)
+
+ **Accessing Object Methods**   
+ 
+You access an object method with the following syntax: `objectName.methodName()` ejemplo `name = person.fullName();`
+
+Si olvidamos los paréntesis devuelve la definición de la función "la fórmula"
+
+**En el ejemplo de la clase creamos un objeto con distintos tipos de atributos, string, arrays, objeto dentro de objeto.
+Luego accedí al array y al obj. dentro del obj.**
+
+![img_42.png](img_42.png) 
+![img_43.png](img_43.png)
+
+Agrego un atributo desde fuera y modifico otro.
+
+![img_44.png](img_44.png) ![img_45.png](img_45.png)
+
+#### Fechas
+Según el profesor son difíciles de trabajar conviene usar librerías como: Momento.js
+
+https://www.w3schools.com/js/js_dates.asp
+
+JavaScript Date Output
+
+By default, JavaScript will use the browser's time zone and display a date as a full text string:
+
+**Mon Oct 17 2022 11:32:36 GMT-0300 (hora estándar de Argentina)**
+
+![img_46.png](img_46.png)
+
+Los números
+
+![img_47.png](img_47.png)
+
+![img_48.png](img_48.png)
+
+![img_49.png](img_49.png)
+
+Clase 
+
+![img_50.png](img_50.png)
+
+![img_51.png](img_51.png)
+
