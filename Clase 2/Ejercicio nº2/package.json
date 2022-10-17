@@ -1,0 +1,15 @@
+{
+  "name": "ej_n2",
+  "version": "1.0.0",
+  "description": "2do ejercicio OB",
+  "main": "index.js",
+  "scripts": {
+    "mostrar":"node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ej_n2"
+  ],
+  "author": "Gustavo MMB",
+  "license": "ISC"
+}

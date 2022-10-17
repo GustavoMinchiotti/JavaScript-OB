@@ -126,6 +126,7 @@ Hice que el paquete lo abra.
 La carpeta la cree en windows y deje más espacios en blanco en él `npm init`, luego seguí todos los pasos de esta guía.
 
 ![img_23.png](img_23.png)
+
 1. A continuación cree el `index.js` y pegué la frase de saludo de OB.
 2. Cree el script start en el paquete `.json` 
 
@@ -330,3 +331,8 @@ Clase
 
 ![img_51.png](img_51.png)
 
+**Extra**
+
+_"\n" Salto de linea en string_ 
+
+_**para imprimir prolijo en menos líneas de código.**_
