@@ -336,3 +336,43 @@ Clase
 _"\n" Salto de linea en string_ 
 
 _**para imprimir prolijo en menos líneas de código.**_
+
+## Clase 3 Estructuras de control
+### Bifurcaciones if else y switch
+En esta clase copié al profesor y abrí el archivo en quokka con `ctrl p `y escribí en la barra un: `>` luego seleccioné 
+Quokka new javaScript file.
+
+Sin apuntes porque esta todo en el código.
+
+### Comparaciones en JS
+En esta clase explica el `==` y el `===` también los `!=` y `!==`.
+
+![img_52.png](img_52.png)
+![img_53.png](img_53.png)
+
+casos: distinto valor, distinto tipo y distintos valores y tipo. el`!==`se va a activar en los dos casos juntos o 
+separados y `!=` solo si son de distinto valor.
+
+### Bucles for y while
+#### For // for in // for of // wile // do-wile
+https://www.w3schools.com/js/js_loop_for.asp
+
+Mucho para ver!!!
+
+`for` `(inicialización, condición, actualización)` `{`comienza con el valor `i`, un ejemplo de condición puede ser
+mientras `i` sea menor que 10, entonces al final de cada iteración a "`i`" le suma 1`}`
+
+![img_54.png](img_54.png)
+ 
+Los bucles son ideales para recorrer listas/arrays.
+![img_55.png](img_55.png)
+
+![img_56.png](img_56.png)
+
+#### Estructura forEach
+
+Esta es una función flecha, tomé la variable valor e iteré dentro de ella, es también una callback function, ejecuta una
+función al terminar otra en el orden que le de yo y no en el que se crearon.
+
+#### For in
+![img_57.png](img_57.png)
