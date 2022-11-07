@@ -67,6 +67,19 @@ Desde el CMD voy a crear una carpeta dentro de la ya creada para esta materia y 
 * `keywords: `hola-mundo no entendí muy bien por qué lo usó.
 * `author:` Gustavo-MMB
 * `license:` (ISC)  Lo dejo como está
+**"puedo poner MIT como licencia sirve para varias cosas compartir, versionar y vender"** según platzi
+******************************************
+### Agregado del curso de platzi de asincronismo:
+1. pwd: Saber donde estoy ubicado.
+2. mkdir: Creación de carpeta
+3. cd: Moverse a carpetas
+4. git init: Inicias Git ***///// creo antes el repo que el json***
+5. npm init: Le da nombre, versión, entre otras cosas al proyecto
+6. code . : Inicia el editor de códigos
+7. creo el .gitignore  ***///// simple lo crea y abre para agregar los*** `/node_modules/`
+******************************************
+![img_58.png](img_58.png)
+
 
 ![img_8.png](img_8.png)
 
@@ -217,7 +230,7 @@ En el caso lista3 al poner 4 me crea una lista vacía con 4 posiciones.
 
 ![img_30.png](img_30.png) Agrego valores dentro del array ![img_31.png](img_31.png)
 
-#### importante no podia abrir la carpeta con espacio porque eran necesarias las comillas
+#### Importante no podía abrir la carpeta con espacio porque eran necesarias las comillas
 ![img_32.png](img_32.png)
 
 *///
@@ -371,8 +384,25 @@ Los bucles son ideales para recorrer listas/arrays.
 
 #### Estructura forEach
 
-Esta es una función flecha, tomé la variable valor e iteré dentro de ella, es también una callback function, ejecuta una
-función al terminar otra en el orden que le de yo y no en el que se crearon.
+Esta es una función flecha, tomé la variable valor e iteré dentro de ella, es también una callback function,
+ejecuta una función al terminar otra en el orden que le de yo y no en el que se crearon.
+
+“Los `callbacks` aseguran que una función no se va a ejecutar antes de que se complete una tarea, sino que se ejecutará
+justo después de que la tarea se haya completado. Nos ayuda a desarrollar código JavaScript asíncrono y nos mantiene a
+salvo de problemas y errores.”
+
+Para eso son los callbacks, para que una function no se ejecute hasta que antes se ejecute otra que necesitamos.
 
 #### For in
 ![img_57.png](img_57.png)
+
+Respecto a `wile` y `do wile` lo más importante es que si me equivoco se puede ejecutar infinitamente y que do wile
+ejecuta si o si el código al menos una vez.
+
+#### Formas de controlar los bucles con continue y break
+
+En la clase usando Quokka se ve el ámbito de las variables y explica el uso de break y continue.
+Casos muy específicos - break, continue .. Recomienda no usarlo por ser una mala práctica
+con var las variables son globales con let quedan dentro del bucle.
+
+#### Etiquetas en los bucles
