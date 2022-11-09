@@ -49,7 +49,7 @@ let persona = {
 console.log(persona.nombre); // esta es la manera común de acceder a un atributo
 
 let prop = "edad"; //* acá estoy creando una variable, le asigno edad como string que representa a su homónima dentro del objeto.
-console.log(persona[prop]); //* con esta sintaxis "[prop]"" accedo a la variable prop dentro del objeto
+console.log(persona[prop]); //* con esta sintaxis "[prop]" accedo a la variable prop dentro del objeto
 
 for (let propiedad in persona) {
   console.log(propiedad); //* accedo al nombre del atributo

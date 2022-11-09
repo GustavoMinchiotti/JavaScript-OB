@@ -406,3 +406,13 @@ Casos muy específicos - break, continue .. Recomienda no usarlo por ser una mal
 con var las variables son globales con let quedan dentro del bucle.
 
 #### Etiquetas en los bucles
+Labels nos permiten nombrar los bucles for o while. --- nos pueden ayudar en caso de querer usar break y continue a 
+controlarlos mejor.
+
+Tampoco es una forma correcta de hacerlo pero ese modo de ejemplo
+
+la etiqueta es con esa sintaxis "bucleDecenas: " antes del while 
+
+#### Ejercicio 3 Factoriales
+https://factorial.mx/numero-funcion-factorial
+
