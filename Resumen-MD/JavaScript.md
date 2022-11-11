@@ -416,3 +416,43 @@ la etiqueta es con esa sintaxis "bucleDecenas: " antes del while
 #### Ejercicio 3 Factoriales
 https://factorial.mx/numero-funcion-factorial
 
+Me costó bastante la logica luego el manejo de los bucles con los ejemplos de clase salió bien
+
+## Clase 4 Strings
+### Tipos de declaración de strings y cuando utilizarlos
+
+Alterna entre comillas simples y dobles como en python. Se suman las comillas hacia atrás `` o *backticks* estas 
+últimas tiene otra función que es la de **introducir variables dentro de la string** y *permite el salto de línea también*. 
+Se va a usar mucho en vue, react etc.
+
+![img_62.png](img_62.png)
+
+### Métodos más comunes de los strings
+
+`console.log(str.length);` Da la cantidad de caracteres
+
+Obtener partes de cadenas de caracteres
+
+`slice() substring() substr()` substr está quedando obsoleto. (deprecated)
+
+`let slice_str = str.slice(5, 10);`
+
+`console.log(slice_str);`
+
+Reemplazar parte del contenido de una cadena de texto
+
+![img_63.png](img_63.png)
+
+
+`cadena.replace("Gorka", "Miguel")` Al utilizar strings sólo reemplaza la primera instancia
+
+![img_64.png](img_64.png)  ![img_65.png](img_65.png)
+
+Al utilizar la expresión regular `/g (global)`, reemplaza todas las instancias
+
+`texto_largo.replace(/los/g, "REEMPLAZO")` **Mucha atención a la sintaxis!!**
+
+![img_66.png](img_66.png)  ![img_67.png](img_67.png)
+
+### Manipulación de cadenas de texto
+
