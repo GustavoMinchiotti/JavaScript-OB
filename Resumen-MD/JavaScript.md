@@ -456,3 +456,22 @@ Al utilizar la expresión regular `/g (global)`, reemplaza todas las instancias
 
 ### Manipulación de cadenas de texto
 
+Ejemplos en el código, se vio. 
+* to lower 
+* to upper
+* comparar entre ambos
+* concatenar, 3 formas distintas una en particular no conviene en Js porque puede sumar números
+* trim para eliminar espacios en total, al principio y al final
+* obtener la posición de un character
+* la posición de una palabra, su primera aparición y la última.
+
+### Expresiones regulares y métodos de búsqueda de cadenas
+
+https://regexr.com       para practicar uso de las expresiones regulares
+
+Salvo que lo indique va ser siempre case sensitive
+
+* buscar las apariciones de una palabra o frase (ojo que es como en pdf encuentra coincidencias dentro de palabras también)
+* saber si existe palabra o frase dentro de un texto
+* saber si empieza o termina con...
+
