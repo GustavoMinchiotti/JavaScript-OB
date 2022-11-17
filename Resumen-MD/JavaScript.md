@@ -475,3 +475,76 @@ Salvo que lo indique va ser siempre case sensitive
 * saber si existe palabra o frase dentro de un texto
 * saber si empieza o termina con...
 
+## Clase 5 Números en JavaScript
+### Numbers y precisión en JS
+**Todos los números se declaran igual no hay int o float.**
+* Javascript no está hecho para ser preciso por ejemplo (0.1 + 0.3) da 0.30000000000004 lo cual es impreciso y tiene 
+que ver con como almacena los bits en memoria.
+* Hay varias maneras y librerías para redondear de manera mas exacta. por ejemplo
+`console.log(Math.round((0.1 + 0.2) * 100)/100);`
+
+En esta sesión usé Quokka para practicar. Es muy sencilla asi que solo agrego captura.
+
+![img_68.png](img_68.png)
+
+### Operaciones y redondeo
+Algo para trabajar con números que puede ser útil es el método `var + .toString()` ejemplo.
+
+![img_69.png](img_69.png)
+
+#### Método `toFixed()`
+El método `.toFixed()` reduce la cantidad de decimales a los que yo quiera, pero lo convierte en string. 
+
+![img_70.png](img_70.png)
+
+También puede sumar decimales a un número.
+
+![img_71.png](img_71.png)
+
+#### Método `toPrecision()`
+Este método nos da la cantidad de cifras significativas teniendo en cuenta los enteros y decimales, el concepto 
+matemático de cifras significativas no lo Sé. También devuelve una String.
+
+Algo muy **importante** del ejemplo que no explicó es porque a un número entero de muchas cifras lo transforma en un 
+decimal de muchas cifras es decir corrió la coma muchas posiciones.
+
+![img_72.png](img_72.png)
+
+### Métodos de numbers y límites en JS
+Otra manera de declarar números es `casteando` la variable `b` es un prototipo con valor 3 que es lo que demuestra 
+el método `.valueOf`, internamente Js opera con los valores.
+
+![img_73.png](img_73.png)
+
+Si utilizo el `casteo` con strings los devuelve como iterables ¡No es muy usado!
+
+![img_74.png](img_74.png)
+
+![img_75.png](img_75.png)
+
+#### NaN == not a number
+Es el error que arroja cuando intento usar como número algo que no lo es.
+
+Tiene un método que es `.isNaN()`
+
+![img_76.png](img_76.png)
+
+#### Infinito
+![img_77.png](img_77.png)
+
+#### Convertir tipos `parseInt y parseFloat`
+
+Un caso probable en Js es que al querer sumar 2 valores, pero que en realidad son una string y un número NO nos arroje 
+error y en su lugar nos de un resultado que no es matemático. En el ejemplo toma a los dos como string y los concatena.
+
+![img_78.png](img_78.png)
+
+Operador `Number()` nos permite hacer un parse siempre y cuando la string esté compuesta por números y no por letras.
+
+![img_79.png](img_79.png)
+
+#### Parse 
+* parseInt redondea y convierte en entero
+* parseFloat lo toma como es en caso de ser decimal
+
+![img_80.png](img_80.png)
