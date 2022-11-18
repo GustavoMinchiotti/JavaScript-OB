@@ -510,6 +510,9 @@ decimal de muchas cifras es decir corrió la coma muchas posiciones.
 
 ![img_72.png](img_72.png)
 
+#### Método `Math.Ceil()` y `Math.floor()`
+![img_85.png](img_85.png)
+
 ### Métodos de numbers y límites en JS
 Otra manera de declarar números es `casteando` la variable `b` es un prototipo con valor 3 que es lo que demuestra 
 el método `.valueOf`, internamente Js opera con los valores.
@@ -548,3 +551,31 @@ Operador `Number()` nos permite hacer un parse siempre y cuando la string esté 
 * parseFloat lo toma como es en caso de ser decimal
 
 ![img_80.png](img_80.png)
+
+#### Hexadecimales (base 16)
+Los hexadecimales son enteros siempre no existen los float en hexadecimal.
+
+Para convertirlos simplemente usamos `parseInt` .
+
+![img_81.png](img_81.png) _Muy importante expresar la base en este caso (16)_ ![img_82.png](img_82.png)
+
+#### Valores máximo y mínimo en Javascript
+Los 3 ejemplos a continuación NO son métodos son propiedades. Los explica a modo de curiosidad.
+
+Epsilon es el mínimo valor de diferencia entre do números equivale aproximadamente a `0.000000000022...`.
+
+![img_83.png](img_83.png)
+
+![img_84.png](img_84.png)
+
+#### Ejercicio 
+
+https://www.w3schools.com/js/tryit.asp?filename=tryjs_number_tofixed
+
+https://www.delftstack.com/es/howto/javascript/javascript-round-to-2-decimal-places/
+En este último utilizo `Math.round()`
+
+
+## Clase 6 Trabajando con listas
+
+

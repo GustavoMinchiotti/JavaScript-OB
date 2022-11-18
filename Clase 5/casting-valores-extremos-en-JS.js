@@ -54,6 +54,6 @@ let min_precision = Number.EPSILON;
 let min_valor_JS = Number.MIN_VALUE;
 let max_valor_JS = Number.MAX_VALUE;
 
-console.log(min_precision);
-console.log(min_valor_JS);
-console.log(max_valor_JS);
+console.log( "Val min_precision = ", min_precision);
+console.log("Mínimo valor existente en Js = ", min_valor_JS);
+console.log("Máximo valor existente en Js = ",max_valor_JS);

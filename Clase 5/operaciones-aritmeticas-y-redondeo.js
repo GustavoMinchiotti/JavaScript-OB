@@ -37,6 +37,15 @@ console.log(e.toFixed(2));
 let f = 2213556153215;
 console.log(f.toFixed(2));
 
+//? Redondear hacia arriba o abajo con Math.ceil() // Math.floor()
+
+let g = 1.3
+console.log(Math.ceil(g));
+
+let h = 1.9
+console.log(Math.floor(h));
+
+
 //! .toPrecision(x) - Limita el número de cifras significativas
 console.log(e.toPrecision(7));
 console.log(f.toPrecision(7));
