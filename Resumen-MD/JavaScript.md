@@ -577,5 +577,202 @@ En este último utilizo `Math.round()`
 
 
 ## Clase 6 Trabajando con listas
+### Métodos básicos
+* Las listas arrays en Js pueden tener todo tipo de valor en una misma lista.
+* Se accede como en los demás lenguajes por posición en base 0. (Índice)
+
+#### Introducir valores
+* Al final con `.push()`
+* Al principio con `.unshift()`
+
+![img_86.png](img_86.png)
+
+#### Eliminar valores
+* Al final con `.pop()`
+* Al principio con `.shift()`
+
+![img_87.png](img_87.png) ![img_89.png](img_89.png)
+
+#### Eliminar, modificar o añadir valores
+* `.splice(x, y, z)`
+
+El intelisense nos va a orientar en su uso: 
+
+* El primer valor es el índice de donde parten los cambios
+* El según es la cantidad de cambios a partir de ahí
+* Si hay un tercer valor será lo que se agregue
+
+Eliminar: **A partir del índice 2 borra ún valor**
+
+![img_90.png](img_90.png) ![img_91.png](img_91.png)
+
+Añadir: **Similar al anterior salvo que el 0 como segundo parámetro dice que no borra nada y el 3er parámetro 
+suma un nuevo valor**
+
+![img_92.png](img_92.png) ![img_93.png](img_93.png)
+
+Modificar: **En el índice 2 va a sumar un valor, el 3er parámetro que en este caso es el `3`.**
+
+![img_94.png](img_94.png) ![img_95.png](img_95.png)
+
+----------------------------------------------------
+#### Concatenación-listas-y-factor-de-propagación.js 
+Una de las maneras de concatenar es a través del método `.concat()` este No modifica los valores de las listas.
+
+![img_96.png](img_96.png) ![img_97.png](img_97.png)
+
+Otra manera es creando una nueva lista: 
+
+![img_98.png](img_98.png) ![img_97.png](img_97.png)
+
+Factor de propagación mas utilizado por el profesor:
+
+Con la sintaxis `console.log(...lista3)` nos da los valores por separado y no dentro de una lista
+
+![img_99.png](img_99.png) ![img_100.png](img_100.png)
+
+![img_101.png](img_101.png)
+
+![img_97.png](img_97.png)
+
+Por último un error común es crear una array de listas sin concatenar lo que da:
+un array con mas arrays dentro.
+
+![img_102.png](img_102.png) ![img_103.png](img_103.png)
+
+----------------------------------------------------------------------------------------
+
+#### Cómo obtener una lista a partir de otra `.slice()`
+**_No es lo mismo que `splice`_**
+
+* ESTE MÉTODO NO MODIFICA EL VALOR DEL ARRAY ORIGINAL
+* `array.slice(1, 4)` nos da inicio y fin según indice , no toma al último
+* `const array2 = array.slice(2, 5)` // Acá construyo otro array
+* `const array3 = array.slice(2, -2)` En este caso el número negativo cuenta del final hacia el comienzo la cantidad de
+pociones empezando de 1 o sea -2 va a contar 2 posiciones hacia atrás.
+
+-----------------------------------------------
+#### Iterar los valores de una lista
+
+Ecma 6 tiene una manera mejor para iterar listas que la conocida bucle for
+
+![img_104.png](img_104.png)
+
+Forma nueva ES6 (más eficiente) `.forEach()`
+
+![img_105.png](img_105.png)
+
+![img_106.png](img_106.png)
+
+Búsqueda de un valor dentro de una lista `.find()`
+
+![img_107.png](img_107.png) Poco eficiente...
+
+Maneras sintácticas de buscar la propiedad de un objeto dentro de una lista de objetos con función flecha.
+
+![img_108.png](img_108.png)
+
+![img_109.png](img_109.png)
+
+* Manera más sintáctica si "o" es igual a Miguel devuelve true y puedo seguir operando
+* ya almacenado el obj Miguel pregunto la edad arroja `28`
+
+Otra forma: 
+
+![img_110.png](img_110.png)
+
+* acá toma {edad} entre {} porque sabemos que es parte de un objeto
+* accede a la propiedad edad del objeto que esta devolviendo el método `.find`
+
+----------------------------------------
+
+#### Métodos avanzados, obtención de listas a partir de listas [Map, filter y reduce son muy utilizados en react angular etc.]
+Comienza mostrando una función `.forEach()` donde esta solo se usa para iterar sin arrojar otro dato o resultado. 
+Ejemplo en el código
+
+https://www.w3schools.com/js/js_array_iteration.asp
+
+#### Función `map()`
+
+* The `map()` method creates a new array by performing a function on each array element.
+* The `map()` method does not execute the function for array elements without values.
+* The `map()` method does not change the original array.
+
+![img_119.png](img_119.png)
+
+En el ejemplo va a agregar a cada valor un número antes, de manera incremental en cada iteración.
+* Esta función tiene 2 parámetros (valor , índice)
+* En el ejemplo de manera optimizada se ordena que sume 1 en el índice en cada iteración.
+* Para expresarlo se concatena y reordena. 
+
+![img_111.png](img_111.png)
+
+![img_112.png](img_112.png)
+
+#### Función `filter()`
+**The filter() method creates a new array with array elements that pass a test.**
+
+¡IMPORTANTE! Para entender bien la función automáticamente recibe 3 parámetros, pero es algo interno de ella no 
+es necesario darlos. En estos 2 ejemplos con 3 o 1 parámetro funciona bien.
+
+![img_117.png](img_117.png) ![img_118.png](img_118.png)
 
 
+En este caso comienza mostrando el método viejo similar a python y otros. 
+* Función filter va a retornar true, quiere decir que la primera condición va a ser True si o si. 
+* en el ejemplo 2 **niega** al objeto Miguel para que todo lo demás sea cierto y lo muestre.
+
+![img_113.png](img_113.png)
+
+![img_114.png](img_114.png)
+
+La manera óptima es la siguiente:
+
+![img_115.png](img_115.png)
+
+Acá filtra a miguel y muestra a todos los demás
+
+![img_116.png](img_116.png)
+
+#### Función `reduce()`
+
+* The `reduce()` method runs a function on each array element to produce `(reduce it to)` a single value.
+* The `reduce()` method works from left-to-right in the array. See also `reduceRight()`.
+
+This example finds the sum of all numbers in an array:
+
+![img_120.png](img_120.png)
+
+Note that the function takes 4 arguments: _"obligatorios son 2 pero acepta 4"_
+
+* The total (the initial value / previously returned value)
+* The item value
+* The item index
+* The array itself
+* The example above does not use the index and array parameters. It can be rewritten to:
+
+![img_121.png](img_121.png)
+
+The reduce() method can accept an initial value: 
+
+`const numbers = [45, 4, 9, 16, 25];`
+
+`let sum = numbers.reduce(myFunction, 100);`
+
+`function myFunction(total, value) {`
+
+ ` return total + value;`
+
+`}` Va a dar como resultado la suma a partir de 100
+
+Este ejemplo muy exagerado es para ver como se van modificando los distintos argumentos en cada iteración:
+
+El valor inicial Comienza con el valor del índice 0 y en esta variable se van a acumular los valores en cada vuelta.
+
+![img_122.png](img_122.png)
+
+![img_123.png](img_123.png)
+
+--------------------------------------------
+
+#### Ordenación de listas y comparación entre dos listas
