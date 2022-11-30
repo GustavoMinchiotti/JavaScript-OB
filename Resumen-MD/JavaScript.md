@@ -576,7 +576,15 @@ https://www.delftstack.com/es/howto/javascript/javascript-round-to-2-decimal-pla
 En este último utilizo `Math.round()`
 
 
-## Clase 6 Trabajando con listas
+## Clase 6 Trabajando con listas === Arrays
+¡In 2015, JavaScript introduced an important new keyword: `const.` It has become a common practice to declare arrays 
+using `const:`.
+* An array declared with const cannot be reassigned
+* Arrays are Not Constants
+* The keyword const is a little misleading.
+It does NOT define a constant array. It defines a constant reference to an array.
+Because of this, we can still change the elements of a constant array.
+
 ### Métodos básicos
 * Las listas arrays en Js pueden tener todo tipo de valor en una misma lista.
 * Se accede como en los demás lenguajes por posición en base 0. (Índice)
@@ -776,3 +784,45 @@ El valor inicial Comienza con el valor del índice 0 y en esta variable se van a
 --------------------------------------------
 
 #### Ordenación de listas y comparación entre dos listas
+Método `.sort()`
+* Este método modifica el array al ordenarlo
+* The `sort()` method sorts an array alphabetically
+* The `reverse()` method reverses the elements in an array.
+
+##### Numeric Sort
+* By default, the `sort()` function sorts values as strings.
+* **Es obligatorio que retorne un valor**
+
+* This works well for strings `("Apple" comes before "Banana")`.
+
+* However, if numbers are sorted as strings, `"25"` is bigger than `"100"`, because `"2"` is bigger than` "1"`.
+
+* Because of this, the` sort()` method will produce incorrect result when sorting numbers.
+* _Para solucionar este problema usamos una función callback que ordene a los números tomándolos como string_
+
+Manera n.º 1 menos sintáctica pero la misma lógica:
+
+![img_125.png](img_125.png)
+
+* Esta **_callback function_** siempre va a comparar de a 2 valores y según se lo pida los va a ordenar luego pasa al 
+siguiente par iterando el array.
+* No importa si es -1 o -6565644465645 lo importante es que valga menos que el otro valor y viceversa.
+
+Manera nº2 mas sintáctica
+
+![img_126.png](img_126.png)
+
+When the sort() function compares two values, it sends the values to the compare function, and sorts the values 
+according to the returned (negative, zero, positive) value.
+
+* If the result is negative, a is sorted before b.
+* If the result is positive, b is sorted before a.
+* If the result is 0, no changes are done with the sort order of the two values.
+
+Example:
+
+The compare function compares all the values in the array, two values at a time `(a, b)`.
+When comparing 40 and 100, the `sort()` method calls the compare function(40, 100).
+The function calculates `40 - 100 (a - b)`, and since the result is negative `(-60)`, the sort function will sort` 40` 
+as a value lower than`100`.
+
