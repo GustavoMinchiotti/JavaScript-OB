@@ -826,3 +826,55 @@ When comparing 40 and 100, the `sort()` method calls the compare function(40, 10
 The function calculates `40 - 100 (a - b)`, and since the result is negative `(-60)`, the sort function will sort` 40` 
 as a value lower than`100`.
 
+De la misma manera que en el ejemplo anterior el método `.sort()` va a ordenar listas de objetos comparando el mismo 
+valor de cada objeto. 
+
+Orden por edad: 
+
+![img_128.png](img_128.png)
+
+### Comparación entre dos listas _parte 2 del video_
+#### Primero vemos el método `.every()` en una sola lista.
+
+El método `.every()` va a chequear si todos los valores del array pasan una condición.
+
+Puede tomar 3 argumentos: (value, index, array) pero con aportar el valor alcanza.
+
+Esta función callback me retorna true si el tipo de todos los valores es num, esto almacenado en la variable "valor".
+
+![img_129.png](img_129.png)
+
+Un ejemplo similar es comparando si son mayores a 0 
+
+![img_130.png](img_130.png)
+
+MANERA MÁS SINTÁCTICA
+
+![img_131.png](img_131.png)
+
+#### Ahora ya conociendo `.every()` vemos como comparar.
+
+Importante!!! ![img_132.png](img_132.png)
+
+Para empezar py para ahorrar trabajo del cpu y memoria voy a comparar si las listas tienen el mismo largo para después
+hacer un trabajo más pesado. Si no son iguales va a salir de la Función.
+
+![img_133.png](img_133.png)
+
+Luego en la misma función: ---  De esta manera compara el valor en el mismo índice de cada array. 
+
+![img_134.png](img_134.png) 
+
+### Identificar si existe un valor en un array y objetos iterables
+
+Esta clase va a seguir con some nº 8 
+
+
+
+
+
+
+
+
+
+.

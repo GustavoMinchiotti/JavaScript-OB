@@ -36,12 +36,12 @@ const listaObjetos = [
 // listaObjetos.sort((a, b) => {
 //     if (a.edad < b.edad) {
 //         return -1
-//     } else if (a.edad > b.edad) {
+//     } else if (a.edad > b.edad) {    //* Esta manera es menos eficiente pero explica el razonamiento para ordenar a todos los objetos por edad.
 //         return +1
 //     } else {
 //         return 0
 //     }
 // })
-listaObjetos.sort((a, b) => a.edad - b.edad);
+listaObjetos.sort((a, b) => a.edad - b.edad);   //? este ejemplo al igual que el array numérico arroja -1 o +1 entre a y b para así ordenar la lista.
 
 console.log(listaObjetos);
