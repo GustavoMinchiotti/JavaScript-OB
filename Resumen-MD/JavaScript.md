@@ -633,7 +633,7 @@ Otra manera es creando una nueva lista:
 
 ![img_98.png](img_98.png) ![img_97.png](img_97.png)
 
-Factor de propagación mas utilizado por el profesor:
+Factor de propagación más utilizado por el profesor:
 
 Con la sintaxis `console.log(...lista3)` nos da los valores por separado y no dentro de una lista
 
@@ -867,9 +867,14 @@ Luego en la misma función: ---  De esta manera compara el valor en el mismo ín
 
 ### Identificar si existe un valor en un array y objetos iterables
 
-Esta clase va a seguir con some nº 8 
+`.some()` significa alguno, a diferencia del every en el que todos deben cumplir una condición con some alcanza con que 
+la cumplan algunos.
 
+![img_135.png](img_135.png)
 
+Con esta sintaxis pregunto si existe un determinado elemento en el objeto.
+
+#### Ejercicio 6 finalizado
 
 
 

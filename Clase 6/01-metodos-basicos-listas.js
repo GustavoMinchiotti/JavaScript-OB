@@ -38,15 +38,16 @@ console.log(array2)
 
 
 //? Método para eliminar, modificar o añadir valores en nuestro array
+
 // .splice(x, y, z)
 const array3 = [1, 2, 3, 4, 5, 6]
 
 // Eliminar valores .splice(indice, numValoresAEliminar)
-array3.splice(2, 1);
+array3.splice(2, 1);    // en el indice 2 y a partir del mismo elimina un valor ---- el 1 como segundo parámetro es que borra un solo valor si es un 2 borra 2 etc.
 console.log(array3)
 
 // Añadir valores .splice(indice, 0, valores)
-array3.splice(2, 0, "hola")
+array3.splice(2, 0, "hola")     // en el indice 2 y en el mismo (,0) agrega un valor ----- si tiene 0 como segundo parámetro no borra
 console.log(array3)
 
 // Modificar valores .splice(indice, 1, valores)

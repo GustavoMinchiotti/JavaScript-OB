@@ -25,6 +25,7 @@ const listaObjetos = [
   { nombre: "Lucía", edad: 3 },
   { nombre: "Amaia", edad: 29 },
 ];
+
 //* Ejemplo de filtro, manera antigua "filtra a los mayores de 30 "
 // const personasMayores = listaObjetos.filter((obj) => {
 //   if (obj.edad > 30) {
