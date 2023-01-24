@@ -876,6 +876,34 @@ Con esta sintaxis pregunto si existe un determinado elemento en el objeto.
 
 #### Ejercicio 6 finalizado
 
+## Clase 7 Trabajando con Sets y Objetos
+
+### Trabajando con Sets (conjuntos)
+
+Una de las características de los sets es que no nos permiten almacenar valores repetidos, si agregamos valores iguales 
+solo guarda el primero. (en caso de variables, no de objetos porque estos últimos tienen diferente espacio en memoria)
+
+https://www.w3schools.com/js/js_sets.asp Aquí explica los métodos
+
+Con el factor de propagación `[...]` convierto un set en array y con esto me aseguro de que el mismo no tiene valores 
+repetidos.
+
+### Trabajando con objetos (se usan mucho en react)
+
+En este objeto trabaja de 2 maneras distintas:
+
+1. key: + Valor entre "comillas" 
+2. key entre"comillas": + valor como un array  
+
+![img_136.png](img_136.png)
+
+Ambos se pueden combinar en el mismo objeto
+
+
+
+
+
+
 
 
 
