@@ -899,6 +899,13 @@ En este objeto trabaja de 2 maneras distintas:
 
 Ambos se pueden combinar en el mismo objeto
 
+### Fechas en JavaScript
+
+Código en el archivo fecha.js muy sencillo.
+
+
+
+
 
 
 
