@@ -1,4 +1,4 @@
-// Sets o conjuntos (en castellano)
+//? Sets o conjuntos (en castellano)
 const array = [1, 2, 3, 4, 5, 6, 1, 2, 5, "hola", { id: 5 }, "hola"];
 
 const miSet = new Set(array);
