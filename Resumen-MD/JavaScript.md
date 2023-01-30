@@ -907,7 +907,11 @@ Código en el archivo fecha.js muy sencillo.
 
 1. En mi resolución creé un array y lo transformé en set, el Ob directamente declaran todo junto.
 ![img_137.png](img_137.png)
-2. 
+2. En mi resolución iba bien hasta que usé un objeto dentro de la lista de objetos, la solución era usar el 
+factor de propagación ***dentro del objeto***
+![img_138.png](img_138.png)
+3. 
+
 
 
 

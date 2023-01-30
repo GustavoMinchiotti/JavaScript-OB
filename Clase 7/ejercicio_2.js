@@ -23,15 +23,10 @@ console.log(Gus);
 console.log("Edad: ", edad);
 
 //* lista con Gus mas dos amigos
-//const amigos = [{Gus},{nombre:"Christian", apellido:"Oriolani", edad:42, altura:184, eresDesarrollador:false}]; //*en este caso no me ordenaba porque pasaba Gus como objeto dentro del objeto
 
 const amigos = [
   {
-    nombre: "Gustavo",
-    apellido: "Minchiotti",
-    edad: 43,
-    altura: 187,
-    eresDesarrollador: true,
+    ...Gus, //! factor de propagación dentro del objeto sino no lo toma.
   },
   {
     nombre: "Christian",
