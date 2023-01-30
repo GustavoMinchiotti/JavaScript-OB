@@ -905,7 +905,9 @@ Código en el archivo fecha.js muy sencillo.
 
 ### ejercicios:
 
-1. 
+1. En mi resolución creé un array y lo transformé en set, el Ob directamente declaran todo junto.
+![img_137.png](img_137.png)
+2. 
 
 
 
