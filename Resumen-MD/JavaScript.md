@@ -910,7 +910,11 @@ Código en el archivo fecha.js muy sencillo.
 2. En mi resolución iba bien hasta que usé un objeto dentro de la lista de objetos, la solución era usar el 
 factor de propagación ***dentro del objeto***
 ![img_138.png](img_138.png)
-3. 
+3. La resolución fue igual a la propuesta en OB
+4. Consola
+![img_140.png](img_140.png)
+![img_141.png](img_141.png)
+
 
 
 
