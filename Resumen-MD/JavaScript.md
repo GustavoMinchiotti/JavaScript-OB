@@ -915,12 +915,21 @@ factor de propagación ***dentro del objeto***
 ![img_140.png](img_140.png)
 ![img_141.png](img_141.png)
 
+## Clase 8 Introducción a las funciones
 
+### Introducción a las funciones en JavaScript
 
+* _**Son Bloques de código que se ejecutan con un fin específico**_
 
+A las funciones les puedo pasar una variable o directamente un valor como parámetro, es muy importante para no cometer 
+graves errores diferenciar cuando usamos datos primitivos o cuando usamos por ejemplo objetos, esto trae aparejado pasar
+por **valor** o por **referencia**.
 
+En el ejemplo en el código cuando paso por valor una variable y modifico el parámetro dentro de la misma no cambia 
+al original, pero cuando uso un objeto (_paso por referencia_) este cambia al objeto original por usar el mismo espacio 
+en memoria.
 
-
+Ver el código que está bien documentado: (link de git hub )
 
 
 
