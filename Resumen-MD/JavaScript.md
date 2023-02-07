@@ -929,12 +929,70 @@ En el ejemplo en el código cuando paso por valor una variable y modifico el par
 al original, pero cuando uso un objeto (_paso por referencia_) este cambia al objeto original por usar el mismo espacio 
 en memoria.
 
-Ver el código que está bien documentado: (link de git hub )
+Ver el código que está bien documentado: (https://github.com/GustavoMinchiotti/JavaScript-OB/blob/main/Clase%208/01%20Intro%20funciones.js)
 
+![img_143.png](img_143.png) 
 
+Parámetros por defecto u opcionales --- si no le paso nada imprime 7 sino imprime lo que le pase.
 
+https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/return 
 
+##### Return
 
+La sentencia `return`finaliza la ejecución de la función y especifica un valor para ser devuelto a quien llama a la 
+función. Si se omite, `undefined` es retornado en su lugar.
+
+### Funciones tipo flecha - funciones anónimas
+
+Las funciones de flecha nos permiten escribir una sintaxis de función más corta:
+`let myFunction = (a, b) => a * b;`
+
+![img_144.png](img_144.png) -- ![img_145.png](img_145.png)
+
+¡Se hace más corto! Si la función tiene solo una declaración y la declaración devuelve un valor, puede quitar los 
+corchetes y el return palabra reservada:
+
+![img_146.png](img_146.png)
+
+Si tiene parámetros, los pasa dentro de los paréntesis:
+
+![img_147.png](img_147.png) -- De hecho, si solo tiene un parámetro, también puede omitir los paréntesis:
+
+![img_148.png](img_148.png)
+
+**_¡Solo se accede a ellas luego de inicializadas!!_**
+
+### Carga y sobrecarga de funciones (stack overflow)
+
+![img_149.png](img_149.png)
+
+### Funciones asíncronas
+
+En ellas trabajamos con datos externos y pasamos a depender de sus tiempos... 
+* Hace una llamada a una base de datos externa --- no conocemos su calidad 
+* Puede darnos algún error
+
+![img_150.png](img_150.png)
+
+Se resuelven a partir de promesas **_Ver este tema en varias plataformas_**
+
+### Funciones generadoras
+
+* la sintaxis es agregando un *
+* en el ejemplo es un iterador incremental con paso 1
+* para llamarla y que no vuelva a comenzar desde `0` guardo el valor en una **variable const** esta se transforma en un 
+`objeto generador`.
+* la sintaxis para entrar al `objeto generador` y a la función es con el método `.next()`
+* para poder salir de la función utilizo la palabra reservada `yield` es como un `return` solo que espera ahi hasta que
+se vuelva a llamar
+* cuando dice `done: false` significa que la función no ha terminado
+
+![img_151.png](img_151.png)
+
+_Si llamo a la func. sin el .value al final retorna esto:_ 
+
+![img_153.png](img_153.png)
+![img_152.png](img_152.png)
 
 
 
