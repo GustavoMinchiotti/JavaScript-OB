@@ -994,6 +994,87 @@ _Si llamo a la func. sin el .value al final retorna esto:_
 ![img_153.png](img_153.png)
 ![img_152.png](img_152.png)
 
+## Clase 9 Gestión de errores
+### Errores en Js
+
+https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Error
+
+Palabra reservada **throw** se utiliza en la gestión de errores en el ejemplo de la función si da error arroja el 
+mensaje dado, pero en este caso también detiene la ejecución.
+
+![img_154.png](img_154.png) --- ![img_155.png](img_155.png)
+
+Otra manera es con `Try` // `catch` y puede agregarse `finally`
+
+![img_156.png](img_156.png)
+
+* `(e)` Tomó como valor el mensaje escrito en líneas anteriores en: `throw new Error("El valor debe ser de tipo número")`
+prestar atención que los llama con `console.error()`
+
+### Gestión de logs en NodeJS
+
+En esta clase creamos un paquete Json pero de forma abreviada con la sintaxis `npm init -Y` esto salta las preguntas
+
+![img_157.png](img_157.png)
+
+![img_158.png](img_158.png)
+
+Reemplazamos la parte de test por: `"start": "node index.js "` y tambien el nombre de archivo porque tomo por defecto el 
+de la clase anterior. 
+
+console.log("este es un mensaje por consola, utilizando la sintaxis: npm start /// desde la consola");
+
+![img_159.png](img_159.png)
+
+Uso el archivo desde la terminal con json NO con f5 en .JS
+
+Librería: **_winston npm_** _para gestionar los logs de manera profesional_
+
+https://www.npmjs.com/package/winston
+
+Lo instalamos en la carpeta donde estamos trabajando con las sintaxis: `npm install winston`
+
+![img_160.png](img_160.png)
+
+Y nos crea una carpeta con los modulos dentro de la carpeta actual
+
+![img_161.png](img_161.png)
+
+Si utilizo esta sintaxis dentro del index.js
+
+![img_163.png](img_163.png)
+
+me da como resultado:
+
+![img_164.png](img_164.png)
+
+### Una vez instalado winston copié parte del código de la página en el index.js
+
+![img_162.png](img_162.png)
+
+Luego lo ejecuté con npm start y este creó dos archivos `.log` en la carpeta de archivos en la que trabajo
+**_("logger")_** con la info de los mensajes que había provisto. Esto es mucho mas prolijo y organizado, que verlo en la
+terminal.
+
+![img_165.png](img_165.png)
+
+![img_166.png](img_166.png)
+**_Niveles de error en Winston_**   
+
+### Creó un nuevo archivo dentro de una carpeta "logger" donde pegó el objeto logger y lo exporto para todo el proyecto
+Luego lo importo desde el index.js `((((no lo hice porque en la clase 10 vamos a trabajar con paquetes))))`
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .
