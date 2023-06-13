@@ -14,9 +14,10 @@ const logger = winston.createLogger({
   ],
 });
 
-
 //logger.log("este es un mensaje por consola, utilizando la sintaxis: npm start /// desde la consola");
 logger.info("mensaje informativo");
 logger.debug("mensaje debug");
 logger.warn("mensaje de advertencia");
 logger.error("mensaje de error");
+
+//! 13/06/2023 retomé este curso luego de alura y volví a instalar Winston

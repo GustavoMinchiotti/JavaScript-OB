@@ -1,40 +1,45 @@
 # JavaScript OB
+
 ## Clase 1. Introducción a JavaScript
+
 ### Intro al curso e instalación de plugins
+
 En la primer clase hablo de la teoría que tipo de lenguaje es Js y recomendó plugins los cuales instalé.
 
 De ellos Quokka es el único que no estaba usando.
 
 ![img.png](img.png)
 
-Básicamente, va marcando en tiempo real los errores de código. 
+Básicamente, va marcando en tiempo real los errores de código.
 
 Se debe abrir el archivo en Quokka para que funcione.
 
 ![img_1.png](img_1.png)
 
 Luego de usarlo se guarda como un archivo `.Js` y lo transforma en un archivo normal.
+
 ### Node y NPM
-Node.js es un entorno en tiempo de ejecución multiplataforma, de código abierto, para la capa del servidor (pero no 
-limitándose a ello) basado en el lenguaje de programación JavaScript, asíncrono, con E/S de datos en una arquitectura 
-orientada a eventos y basado en el motor V8 de Google. Fue creado con el enfoque de ser útil en la creación de programas 
-de red altamente escalables, como por ejemplo, servidores web. Fue creado por Ryan Dahl en 2009 y su evolución está 
+
+Node.js es un entorno en tiempo de ejecución multiplataforma, de código abierto, para la capa del servidor (pero no
+limitándose a ello) basado en el lenguaje de programación JavaScript, asíncrono, con E/S de datos en una arquitectura
+orientada a eventos y basado en el motor V8 de Google. Fue creado con el enfoque de ser útil en la creación de programas
+de red altamente escalables, como por ejemplo, servidores web. Fue creado por Ryan Dahl en 2009 y su evolución está
 apadrinada por la empresa Joyent, que además tiene contratado a Dahl en plantilla.
 
 Node.js es similar en su propósito a Twisted o Tornado de Python, Perl Object Environment de Perl, libevent o libev de
-C, EventMachine de Ruby, vibe.d de D y Java EE de Java existe Apache MINA, Netty, Akka, Vert.x, Grizzly o Xsocket. 
-Al contrario que la mayoría del código JavaScript, no se ejecuta en un navegador, sino en el servidor. Node.js 
+C, EventMachine de Ruby, vibe.d de D y Java EE de Java existe Apache MINA, Netty, Akka, Vert.x, Grizzly o Xsocket.
+Al contrario que la mayoría del código JavaScript, no se ejecuta en un navegador, sino en el servidor. Node.js
 implementa algunas especificaciones de CommonJS. Node.js incluye un entorno REPL para depuración interactiva.
 
-https://es.wikipedia.org/wiki/Node.js
+<https://es.wikipedia.org/wiki/Node.js>
 
-NPM es el sistema de gestión de paquetes por defecto para Node.js, un entorno de ejecución para JavaScript, bajo 
+NPM es el sistema de gestión de paquetes por defecto para Node.js, un entorno de ejecución para JavaScript, bajo
 Artistic License 2.0.
 
-Desde la versión 0.6.3 de Node.js npm es instalado automáticamente con el entorno. npm se ejecuta desde la línea de 
-comandos y maneja las dependencias para una aplicación. Además, permite a los usuarios instalar aplicaciones Node.js 
+Desde la versión 0.6.3 de Node.js npm es instalado automáticamente con el entorno. npm se ejecuta desde la línea de
+comandos y maneja las dependencias para una aplicación. Además, permite a los usuarios instalar aplicaciones Node.js
 que se encuentran en el repositorio. npm está escrito enteramente en JavaScript y fue desarrollado por Isaac Z. Schlueter
-a raíz de la frustración que experimentó mientras trabajaba con CommonJS y considerando las deficiencias de otros 
+a raíz de la frustración que experimentó mientras trabajaba con CommonJS y considerando las deficiencias de otros
 proyectos similares como PHP (PEAR) y Perl (CPAN)
 
 **_Luego vino la instalación, pero ya lo hice con el curso anterior._**
@@ -42,9 +47,10 @@ proyectos similares como PHP (PEAR) y Perl (CPAN)
 ![img_2.png](img_2.png)
 
 ### Primer proyecto Node
+
 Desde el CMD voy a crear una carpeta dentro de la ya creada para esta materia y subida a github.
 
-![img_3.png](img_3.png) 
+![img_3.png](img_3.png)
 
 * El comando `code .` abre el proyecto en VsCode.
 * Con `ctrl shift ñ` abro la terminal.
@@ -55,21 +61,26 @@ Desde el CMD voy a crear una carpeta dentro de la ya creada para esta materia y 
 * Donde dice Package name es una pregunta, al poner hola-mundo le digo que ese es el nombre del paquete
 
 ![img_5.png](img_5.png)
+
 * Description del proyecto
 
 ![img_6.png](img_6.png)
+
 * El `entry point` lo dejo por defecto, va a ser el archivo por defecto a ejecutar.
 
 ![img_7.png](img_7.png)
 
 * `Test command:` `jest` acá si quiero puedo usar una librería como jest para testear. por ahora queda vacío.
-* `git repository:` lo dejo en blanco (aunque la carpeta si esta en git no subo particularmente ente .json) 
-* `keywords: `hola-mundo no entendí muy bien por qué lo usó.
+* `git repository:` lo dejo en blanco (aunque la carpeta si esta en git no subo particularmente ente .json)
+* `keywords:`hola-mundo no entendí muy bien por qué lo usó.
 * `author:` Gustavo-MMB
 * `license:` (ISC)  Lo dejo como está
 **"puedo poner MIT como licencia sirve para varias cosas compartir, versionar y vender"** según platzi
+
 ******************************************
-### Agregado del curso de platzi de asincronismo:
+
+### Agregado del curso de platzi de asincronismo
+
 1. pwd: Saber donde estoy ubicado.
 2. mkdir: Creación de carpeta
 3. cd: Moverse a carpetas
@@ -77,19 +88,20 @@ Desde el CMD voy a crear una carpeta dentro de la ya creada para esta materia y 
 5. npm init: Le da nombre, versión, entre otras cosas al proyecto
 6. code . : Inicia el editor de códigos
 7. creo el .gitignore  ***///// simple lo crea y abre para agregar los*** `/node_modules/`
+
 ******************************************
 ![img_58.png](img_58.png)
-
 
 ![img_8.png](img_8.png)
 
 Luego de aceptar con enter me genera el `.json`
 
-![img_9.png](img_9.png) 
+![img_9.png](img_9.png)
 
-![img_10.png](img_10.png)   
+![img_10.png](img_10.png)
 
 Acá puedo modificar los datos que ingresé
+
 * Creo los archivos **`inex.js`** y `holamundo.js`
 
 ![img_11.png](img_11.png)
@@ -98,7 +110,7 @@ Una de las formas de ejecutarlo es a través de node, en la terminal escribo: `n
 
 ![img_12.png](img_12.png)
 
-![img_13.png](img_13.png)   
+![img_13.png](img_13.png)
 
 #### Esta prueba la hice el dia posterior y antes de cursar lo de UTN
 
@@ -106,22 +118,21 @@ Una de las formas de ejecutarlo es a través de node, en la terminal escribo: `n
 
 ![img_15.png](img_15.png)
 
-
 ### Ejecución y comentarios
 
-**Scripts == guiones** Son código que se va a ejecutar 
+**Scripts == guiones** Son código que se va a ejecutar
 
-Desde la terminal podemos ejecutar los scripts del archivo `package.json` por ejemplo con la sentencia:` npm run + monbre del script` 
+Desde la terminal podemos ejecutar los scripts del archivo `package.json` por ejemplo con la sentencia:`npm run + monbre del script`
 en este caso de ejemplo solo hay un script que es "test".
 
 ![img_16.png](img_16.png)
 
-![img_17.png](img_17.png) 
+![img_17.png](img_17.png)
 
-Lo que vemos es que a través de la terminal nos mostró lo que hay en test, si fuera un script más complejo del mismo 
+Lo que vemos es que a través de la terminal nos mostró lo que hay en test, si fuera un script más complejo del mismo
 modo sería ejecutado.
 
-Como ejemplo aunque esto no se usa, inicio desde la terminal node `package.json` al archivo `hola_mundo`. 
+Como ejemplo aunque esto no se usa, inicio desde la terminal node `package.json` al archivo `hola_mundo`.
 Hice que el paquete lo abra.
 
 ![img_18.png](img_18.png)  ![img_19.png](img_19.png)
@@ -129,19 +140,20 @@ Hice que el paquete lo abra.
 * Lo habitual sería ir al index del proyecto donde estaría el programa.
 * Importantísimo anteponer `node` antes del nombre de archivo .js.
 
-![img_20.png](img_20.png) 
+![img_20.png](img_20.png)
 
 ![img_21.png](img_21.png)
 
 ![img_22.png](img_22.png)
 
-### primer tarea 
+### primer tarea
+
 La carpeta la cree en windows y deje más espacios en blanco en él `npm init`, luego seguí todos los pasos de esta guía.
 
 ![img_23.png](img_23.png)
 
 1. A continuación cree el `index.js` y pegué la frase de saludo de OB.
-2. Cree el script start en el paquete `.json` 
+2. Cree el script start en el paquete `.json`
 
 ![img_24.png](img_24.png)
 
@@ -150,16 +162,19 @@ La carpeta la cree en windows y deje más espacios en blanco en él `npm init`, 
 ![img_25.png](img_25.png)
 
 ## Clase 2 Sintaxis variables y palabras reservadas de JS
-### Tipado en JS y tipos primitivos
-https://www.w3schools.com/js/js_typeof.asp
 
-**Tipado inferido** la variable será definida al momento de ser interpretada. Entre sus **ventajas** está la velocidad para 
-escribir el código y entre las **desventajas** que el ide no nos va a dar error si cambiamos por ejemplo un string a int, 
+### Tipado en JS y tipos primitivos
+
+<https://www.w3schools.com/js/js_typeof.asp>
+
+**Tipado inferido** la variable será definida al momento de ser interpretada. Entre sus **ventajas** está la velocidad para
+escribir el código y entre las **desventajas** que el ide no nos va a dar error si cambiamos por ejemplo un string a int,
 puede ocasionar problemas.
 
 Los tipos en Js tienen 2 grandes grupos: primitivos y objetos.
 
-**_Primitivos:_** 
+**_Primitivos:_**
+
 1. Número (con o sin decimal, no hay float en JS)
 2. String
 3. Booleano
@@ -171,7 +186,9 @@ Los tipos en Js tienen 2 grandes grupos: primitivos y objetos.
 ![img_26.png](img_26.png)
 
 ### Declaración de variables y escritura dinámica
+
 4 Ways to Declare a JavaScript Variable:
+
 * Using var
 * Using let
 * Using const
@@ -211,15 +228,18 @@ The general rules for constructing names for variables (unique identifiers) are:
 
 ![img_27.png](img_27.png)
 
-Si afecto una variable declarada con var dentro de una función por ejemplo esta cambia de manera global. 
+Si afecto una variable declarada con var dentro de una función por ejemplo esta cambia de manera global.
 
 Si afecto una variable declarada con let dentro de una función esta solo cambia dentro de la misma.
 
 ### Notación en JavaScript
+
 Detalles en el código.
 
 ### Listas, Objetos y Fechas en JS
+
 #### Listas
+
 Las listas se declaran de 2 maneras detalles en el código.
 
 ![img_28.png](img_28.png)
@@ -231,26 +251,29 @@ En el caso lista3 al poner 4 me crea una lista vacía con 4 posiciones.
 ![img_30.png](img_30.png) Agrego valores dentro del array ![img_31.png](img_31.png)
 
 #### Importante no podía abrir la carpeta con espacio porque eran necesarias las comillas
+
 ![img_32.png](img_32.png)
 
 *///
 
 ![img_33.png](img_33.png)
 
-Me costó mucho hacer correr el script en la terminal, con _**npm** no pude_ luego de agregarlo correctamente a la carpeta 
+Me costó mucho hacer correr el script en la terminal, con _**npm** no pude_ luego de agregarlo correctamente a la carpeta
 Clase 1 y al `.Json` ahora lo voy a correr de carpeta para probar si funciona en Clase 2 que es donde debe ir.
-* Lo cambié de carpeta y funcionó 
+
+* Lo cambié de carpeta y funcionó
 * Sin estar agregado al archivo `Package.json` funciona igual
 * Por último si estoy fuera de la carpeta del archivo asi sea la carpeta superior NO funciona.
 
 #### Objetos
-https://www.w3schools.com/js/js_objects.asp HAY UNA BUENA EXPLICACIÓN DE THIS
+
+<https://www.w3schools.com/js/js_objects.asp> HAY UNA BUENA EXPLICACIÓN DE THIS
 
 In real life, a car is an object.
 
 A car has properties like weight and color, and methods like start and stop:
 
-![img_34.png](img_34.png)   
+![img_34.png](img_34.png)
 
 * All cars have the same properties, but the property values differ from car to car.
 
@@ -263,10 +286,10 @@ A car has properties like weight and color, and methods like start and stop:
 
 Object Definition
 
-You define (and create) a JavaScript object with an object literal: const person = 
+You define (and create) a JavaScript object with an object literal: const person =
 `{firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};`
 
-Spaces and line breaks are not important. An object definition can span multiple lines: 
+Spaces and line breaks are not important. An object definition can span multiple lines:
 
 ![img_39.png](img_39.png)
 
@@ -289,20 +312,20 @@ Methods are stored in properties as function definitions.
 
 ![img_35.png](img_35.png)
 
-![img_37.png](img_37.png)   
+![img_37.png](img_37.png)
 
-![img_38.png](img_38.png)   
+![img_38.png](img_38.png)
 
 In the example above, `this` refers to the person object.
 (I.E.== O SEA) `this.firstName` means the _firstName_ property of _this._
-I.E.` this.firstName` means the _firstName_ property of _person_.
+I.E.`this.firstName` means the _firstName_ property of _person_.
 
 ![img_40.png](img_40.png)
 
 ![img_41.png](img_41.png)
 
- **Accessing Object Methods**   
- 
+ **Accessing Object Methods**
+
 You access an object method with the following syntax: `objectName.methodName()` ejemplo `name = person.fullName();`
 
 Si olvidamos los paréntesis devuelve la definición de la función "la fórmula"
@@ -310,7 +333,7 @@ Si olvidamos los paréntesis devuelve la definición de la función "la fórmula
 **En el ejemplo de la clase creamos un objeto con distintos tipos de atributos, string, arrays, objeto dentro de objeto.
 Luego accedí al array y al obj. dentro del obj.**
 
-![img_42.png](img_42.png) 
+![img_42.png](img_42.png)
 ![img_43.png](img_43.png)
 
 Agrego un atributo desde fuera y modifico otro.
@@ -318,9 +341,10 @@ Agrego un atributo desde fuera y modifico otro.
 ![img_44.png](img_44.png) ![img_45.png](img_45.png)
 
 #### Fechas
+
 Según el profesor son difíciles de trabajar conviene usar librerías como: Momento.js
 
-https://www.w3schools.com/js/js_dates.asp
+<https://www.w3schools.com/js/js_dates.asp>
 
 JavaScript Date Output
 
@@ -338,7 +362,7 @@ Los números
 
 ![img_49.png](img_49.png)
 
-Clase 
+Clase
 
 ![img_50.png](img_50.png)
 
@@ -346,29 +370,34 @@ Clase
 
 **Extra**
 
-_"\n" Salto de linea en string_ 
+_"\n" Salto de linea en string_
 
 _**para imprimir prolijo en menos líneas de código.**_
 
 ## Clase 3 Estructuras de control
+
 ### Bifurcaciones if else y switch
-En esta clase copié al profesor y abrí el archivo en quokka con `ctrl p `y escribí en la barra un: `>` luego seleccioné 
+
+En esta clase copié al profesor y abrí el archivo en quokka con `ctrl p`y escribí en la barra un: `>` luego seleccioné
 Quokka new javaScript file.
 
 Sin apuntes porque esta todo en el código.
 
 ### Comparaciones en JS
+
 En esta clase explica el `==` y el `===` también los `!=` y `!==`.
 
 ![img_52.png](img_52.png)
 ![img_53.png](img_53.png)
 
-casos: distinto valor, distinto tipo y distintos valores y tipo. el`!==`se va a activar en los dos casos juntos o 
+casos: distinto valor, distinto tipo y distintos valores y tipo. el`!==`se va a activar en los dos casos juntos o
 separados y `!=` solo si son de distinto valor.
 
 ### Bucles for y while
+
 #### For // for in // for of // wile // do-wile
-https://www.w3schools.com/js/js_loop_for.asp
+
+<https://www.w3schools.com/js/js_loop_for.asp>
 
 Mucho para ver!!!
 
@@ -376,7 +405,7 @@ Mucho para ver!!!
 mientras `i` sea menor que 10, entonces al final de cada iteración a "`i`" le suma 1`}`
 
 ![img_54.png](img_54.png)
- 
+
 Los bucles son ideales para recorrer listas/arrays.
 ![img_55.png](img_55.png)
 
@@ -394,6 +423,7 @@ salvo de problemas y errores.”
 Para eso son los callbacks, para que una function no se ejecute hasta que antes se ejecute otra que necesitamos.
 
 #### For in
+
 ![img_57.png](img_57.png)
 
 Respecto a `wile` y `do wile` lo más importante es que si me equivoco se puede ejecutar infinitamente y que do wile
@@ -406,23 +436,26 @@ Casos muy específicos - break, continue .. Recomienda no usarlo por ser una mal
 con var las variables son globales con let quedan dentro del bucle.
 
 #### Etiquetas en los bucles
-Labels nos permiten nombrar los bucles for o while. --- nos pueden ayudar en caso de querer usar break y continue a 
+
+Labels nos permiten nombrar los bucles for o while. --- nos pueden ayudar en caso de querer usar break y continue a
 controlarlos mejor.
 
 Tampoco es una forma correcta de hacerlo pero ese modo de ejemplo
 
-la etiqueta es con esa sintaxis "bucleDecenas: " antes del while 
+la etiqueta es con esa sintaxis "bucleDecenas: " antes del while
 
 #### Ejercicio 3 Factoriales
-https://factorial.mx/numero-funcion-factorial
+
+<https://factorial.mx/numero-funcion-factorial>
 
 Me costó bastante la logica luego el manejo de los bucles con los ejemplos de clase salió bien
 
 ## Clase 4 Strings
+
 ### Tipos de declaración de strings y cuando utilizarlos
 
-Alterna entre comillas simples y dobles como en python. Se suman las comillas hacia atrás `` o *backticks* estas 
-últimas tiene otra función que es la de **introducir variables dentro de la string** y *permite el salto de línea también*. 
+Alterna entre comillas simples y dobles como en python. Se suman las comillas hacia atrás `` o _backticks_ estas
+últimas tiene otra función que es la de **introducir variables dentro de la string** y _permite el salto de línea también_.
 Se va a usar mucho en vue, react etc.
 
 ![img_62.png](img_62.png)
@@ -443,7 +476,6 @@ Reemplazar parte del contenido de una cadena de texto
 
 ![img_63.png](img_63.png)
 
-
 `cadena.replace("Gorka", "Miguel")` Al utilizar strings sólo reemplaza la primera instancia
 
 ![img_64.png](img_64.png)  ![img_65.png](img_65.png)
@@ -456,8 +488,9 @@ Al utilizar la expresión regular `/g (global)`, reemplaza todas las instancias
 
 ### Manipulación de cadenas de texto
 
-Ejemplos en el código, se vio. 
-* to lower 
+Ejemplos en el código, se vio.
+
+* to lower
 * to upper
 * comparar entre ambos
 * concatenar, 3 formas distintas una en particular no conviene en Js porque puede sumar números
@@ -467,7 +500,7 @@ Ejemplos en el código, se vio.
 
 ### Expresiones regulares y métodos de búsqueda de cadenas
 
-https://regexr.com       para practicar uso de las expresiones regulares
+<https://regexr.com>       para practicar uso de las expresiones regulares
 
 Salvo que lo indique va ser siempre case sensitive
 
@@ -475,10 +508,22 @@ Salvo que lo indique va ser siempre case sensitive
 * saber si existe palabra o frase dentro de un texto
 * saber si empieza o termina con...
 
+### Extraído de Alura Js primeros pasos
+
+Plantillas string
+
+* En este caso se usa la interpolación Js sabe que dentro de la plantilla voy a usar otras variables
+* no es necesario concatenar con el +.
+
+![img_167.png](img_167.png)
+
 ## Clase 5 Números en JavaScript
+
 ### Numbers y precisión en JS
+
 **Todos los números se declaran igual no hay int o float.**
-* Javascript no está hecho para ser preciso por ejemplo (0.1 + 0.3) da 0.30000000000004 lo cual es impreciso y tiene 
+
+* Javascript no está hecho para ser preciso por ejemplo (0.1 + 0.3) da 0.30000000000004 lo cual es impreciso y tiene
 que ver con como almacena los bits en memoria.
 * Hay varias maneras y librerías para redondear de manera mas exacta. por ejemplo
 `console.log(Math.round((0.1 + 0.2) * 100)/100);`
@@ -488,12 +533,14 @@ En esta sesión usé Quokka para practicar. Es muy sencilla asi que solo agrego 
 ![img_68.png](img_68.png)
 
 ### Operaciones y redondeo
+
 Algo para trabajar con números que puede ser útil es el método `var + .toString()` ejemplo.
 
 ![img_69.png](img_69.png)
 
 #### Método `toFixed()`
-El método `.toFixed()` reduce la cantidad de decimales a los que yo quiera, pero lo convierte en string. 
+
+El método `.toFixed()` reduce la cantidad de decimales a los que yo quiera, pero lo convierte en string.
 
 ![img_70.png](img_70.png)
 
@@ -502,19 +549,22 @@ También puede sumar decimales a un número.
 ![img_71.png](img_71.png)
 
 #### Método `toPrecision()`
-Este método nos da la cantidad de cifras significativas teniendo en cuenta los enteros y decimales, el concepto 
+
+Este método nos da la cantidad de cifras significativas teniendo en cuenta los enteros y decimales, el concepto
 matemático de cifras significativas no lo Sé. También devuelve una String.
 
-Algo muy **importante** del ejemplo que no explicó es porque a un número entero de muchas cifras lo transforma en un 
+Algo muy **importante** del ejemplo que no explicó es porque a un número entero de muchas cifras lo transforma en un
 decimal de muchas cifras es decir corrió la coma muchas posiciones.
 
 ![img_72.png](img_72.png)
 
 #### Método `Math.Ceil()` y `Math.floor()`
+
 ![img_85.png](img_85.png)
 
 ### Métodos de numbers y límites en JS
-Otra manera de declarar números es `casteando` la variable `b` es un prototipo con valor 3 que es lo que demuestra 
+
+Otra manera de declarar números es `casteando` la variable `b` es un prototipo con valor 3 que es lo que demuestra
 el método `.valueOf`, internamente Js opera con los valores.
 
 ![img_73.png](img_73.png)
@@ -526,6 +576,7 @@ Si utilizo el `casteo` con strings los devuelve como iterables ¡No es muy usado
 ![img_75.png](img_75.png)
 
 #### NaN == not a number
+
 Es el error que arroja cuando intento usar como número algo que no lo es.
 
 Tiene un método que es `.isNaN()`
@@ -533,11 +584,12 @@ Tiene un método que es `.isNaN()`
 ![img_76.png](img_76.png)
 
 #### Infinito
+
 ![img_77.png](img_77.png)
 
 #### Convertir tipos `parseInt y parseFloat`
 
-Un caso probable en Js es que al querer sumar 2 valores, pero que en realidad son una string y un número NO nos arroje 
+Un caso probable en Js es que al querer sumar 2 valores, pero que en realidad son una string y un número NO nos arroje
 error y en su lugar nos de un resultado que no es matemático. En el ejemplo toma a los dos como string y los concatena.
 
 ![img_78.png](img_78.png)
@@ -546,13 +598,15 @@ Operador `Number()` nos permite hacer un parse siempre y cuando la string esté 
 
 ![img_79.png](img_79.png)
 
-#### Parse 
+#### Parse
+
 * parseInt redondea y convierte en entero
 * parseFloat lo toma como es en caso de ser decimal
 
 ![img_80.png](img_80.png)
 
 #### Hexadecimales (base 16)
+
 Los hexadecimales son enteros siempre no existen los float en hexadecimal.
 
 Para convertirlos simplemente usamos `parseInt` .
@@ -560,6 +614,7 @@ Para convertirlos simplemente usamos `parseInt` .
 ![img_81.png](img_81.png) _Muy importante expresar la base en este caso (16)_ ![img_82.png](img_82.png)
 
 #### Valores máximo y mínimo en Javascript
+
 Los 3 ejemplos a continuación NO son métodos son propiedades. Los explica a modo de curiosidad.
 
 Epsilon es el mínimo valor de diferencia entre do números equivale aproximadamente a `0.000000000022...`.
@@ -568,17 +623,18 @@ Epsilon es el mínimo valor de diferencia entre do números equivale aproximadam
 
 ![img_84.png](img_84.png)
 
-#### Ejercicio 
+#### Ejercicio
 
-https://www.w3schools.com/js/tryit.asp?filename=tryjs_number_tofixed
+<https://www.w3schools.com/js/tryit.asp?filename=tryjs_number_tofixed>
 
-https://www.delftstack.com/es/howto/javascript/javascript-round-to-2-decimal-places/
+<https://www.delftstack.com/es/howto/javascript/javascript-round-to-2-decimal-places/>
 En este último utilizo `Math.round()`
 
-
 ## Clase 6 Trabajando con listas === Arrays
-¡In 2015, JavaScript introduced an important new keyword: `const.` It has become a common practice to declare arrays 
+
+¡In 2015, JavaScript introduced an important new keyword: `const.` It has become a common practice to declare arrays
 using `const:`.
+
 * An array declared with const cannot be reassigned
 * Arrays are Not Constants
 * The keyword const is a little misleading.
@@ -586,25 +642,29 @@ It does NOT define a constant array. It defines a constant reference to an array
 Because of this, we can still change the elements of a constant array.
 
 ### Métodos básicos
+
 * Las listas arrays en Js pueden tener todo tipo de valor en una misma lista.
 * Se accede como en los demás lenguajes por posición en base 0. (Índice)
 
 #### Introducir valores
+
 * Al final con `.push()`
 * Al principio con `.unshift()`
 
 ![img_86.png](img_86.png)
 
 #### Eliminar valores
+
 * Al final con `.pop()`
 * Al principio con `.shift()`
 
 ![img_87.png](img_87.png) ![img_89.png](img_89.png)
 
 #### Eliminar, modificar o añadir valores
+
 * `.splice(x, y, z)`
 
-El intelisense nos va a orientar en su uso: 
+El intelisense nos va a orientar en su uso:
 
 * El primer valor es el índice de donde parten los cambios
 * El según es la cantidad de cambios a partir de ahí
@@ -614,7 +674,7 @@ Eliminar: **A partir del índice 2 borra ún valor**
 
 ![img_90.png](img_90.png) ![img_91.png](img_91.png)
 
-Añadir: **Similar al anterior salvo que el 0 como segundo parámetro dice que no borra nada y el 3er parámetro 
+Añadir: **Similar al anterior salvo que el 0 como segundo parámetro dice que no borra nada y el 3er parámetro
 suma un nuevo valor**
 
 ![img_92.png](img_92.png) ![img_93.png](img_93.png)
@@ -624,12 +684,14 @@ Modificar: **En el índice 2 va a sumar un valor, el 3er parámetro que en este 
 ![img_94.png](img_94.png) ![img_95.png](img_95.png)
 
 ----------------------------------------------------
-#### Concatenación-listas-y-factor-de-propagación.js 
+
+#### Concatenación-listas-y-factor-de-propagación.js
+
 Una de las maneras de concatenar es a través del método `.concat()` este No modifica los valores de las listas.
 
 ![img_96.png](img_96.png) ![img_97.png](img_97.png)
 
-Otra manera es creando una nueva lista: 
+Otra manera es creando una nueva lista:
 
 ![img_98.png](img_98.png) ![img_97.png](img_97.png)
 
@@ -651,6 +713,7 @@ un array con mas arrays dentro.
 ----------------------------------------------------------------------------------------
 
 #### Cómo obtener una lista a partir de otra `.slice()`
+
 **_No es lo mismo que `splice`_**
 
 * ESTE MÉTODO NO MODIFICA EL VALOR DEL ARRAY ORIGINAL
@@ -660,6 +723,7 @@ un array con mas arrays dentro.
 pociones empezando de 1 o sea -2 va a contar 2 posiciones hacia atrás.
 
 -----------------------------------------------
+
 #### Iterar los valores de una lista
 
 Ecma 6 tiene una manera mejor para iterar listas que la conocida bucle for
@@ -685,7 +749,7 @@ Maneras sintácticas de buscar la propiedad de un objeto dentro de una lista de 
 * Manera más sintáctica si "o" es igual a Miguel devuelve true y puedo seguir operando
 * ya almacenado el obj Miguel pregunto la edad arroja `28`
 
-Otra forma: 
+Otra forma:
 
 ![img_110.png](img_110.png)
 
@@ -695,10 +759,11 @@ Otra forma:
 ----------------------------------------
 
 #### Métodos avanzados, obtención de listas a partir de listas [Map, filter y reduce son muy utilizados en react angular etc.]
-Comienza mostrando una función `.forEach()` donde esta solo se usa para iterar sin arrojar otro dato o resultado. 
+
+Comienza mostrando una función `.forEach()` donde esta solo se usa para iterar sin arrojar otro dato o resultado.
 Ejemplo en el código
 
-https://www.w3schools.com/js/js_array_iteration.asp
+<https://www.w3schools.com/js/js_array_iteration.asp>
 
 #### Función `map()`
 
@@ -709,25 +774,27 @@ https://www.w3schools.com/js/js_array_iteration.asp
 ![img_119.png](img_119.png)
 
 En el ejemplo va a agregar a cada valor un número antes, de manera incremental en cada iteración.
+
 * Esta función tiene 2 parámetros (valor , índice)
 * En el ejemplo de manera optimizada se ordena que sume 1 en el índice en cada iteración.
-* Para expresarlo se concatena y reordena. 
+* Para expresarlo se concatena y reordena.
 
 ![img_111.png](img_111.png)
 
 ![img_112.png](img_112.png)
 
 #### Función `filter()`
+
 **The filter() method creates a new array with array elements that pass a test.**
 
-¡IMPORTANTE! Para entender bien la función automáticamente recibe 3 parámetros, pero es algo interno de ella no 
+¡IMPORTANTE! Para entender bien la función automáticamente recibe 3 parámetros, pero es algo interno de ella no
 es necesario darlos. En estos 2 ejemplos con 3 o 1 parámetro funciona bien.
 
 ![img_117.png](img_117.png) ![img_118.png](img_118.png)
 
+En este caso comienza mostrando el método viejo similar a python y otros.
 
-En este caso comienza mostrando el método viejo similar a python y otros. 
-* Función filter va a retornar true, quiere decir que la primera condición va a ser True si o si. 
+* Función filter va a retornar true, quiere decir que la primera condición va a ser True si o si.
 * en el ejemplo 2 **niega** al objeto Miguel para que todo lo demás sea cierto y lo muestre.
 
 ![img_113.png](img_113.png)
@@ -761,7 +828,7 @@ Note that the function takes 4 arguments: _"obligatorios son 2 pero acepta 4"_
 
 ![img_121.png](img_121.png)
 
-The reduce() method can accept an initial value: 
+The reduce() method can accept an initial value:
 
 `const numbers = [45, 4, 9, 16, 25];`
 
@@ -769,7 +836,7 @@ The reduce() method can accept an initial value:
 
 `function myFunction(total, value) {`
 
- ` return total + value;`
+ `return total + value;`
 
 `}` Va a dar como resultado la suma a partir de 100
 
@@ -784,27 +851,30 @@ El valor inicial Comienza con el valor del índice 0 y en esta variable se van a
 --------------------------------------------
 
 #### Ordenación de listas y comparación entre dos listas
+
 Método `.sort()`
+
 * Este método modifica el array al ordenarlo
 * The `sort()` method sorts an array alphabetically
 * The `reverse()` method reverses the elements in an array.
 
 ##### Numeric Sort
+
 * By default, the `sort()` function sorts values as strings.
 * **Es obligatorio que retorne un valor**
 
 * This works well for strings `("Apple" comes before "Banana")`.
 
-* However, if numbers are sorted as strings, `"25"` is bigger than `"100"`, because `"2"` is bigger than` "1"`.
+* However, if numbers are sorted as strings, `"25"` is bigger than `"100"`, because `"2"` is bigger than`"1"`.
 
-* Because of this, the` sort()` method will produce incorrect result when sorting numbers.
+* Because of this, the`sort()` method will produce incorrect result when sorting numbers.
 * _Para solucionar este problema usamos una función callback que ordene a los números tomándolos como string_
 
 Manera n.º 1 menos sintáctica pero la misma lógica:
 
 ![img_125.png](img_125.png)
 
-* Esta **_callback function_** siempre va a comparar de a 2 valores y según se lo pida los va a ordenar luego pasa al 
+* Esta **_callback function_** siempre va a comparar de a 2 valores y según se lo pida los va a ordenar luego pasa al
 siguiente par iterando el array.
 * No importa si es -1 o -6565644465645 lo importante es que valga menos que el otro valor y viceversa.
 
@@ -812,7 +882,7 @@ Manera nº2 mas sintáctica
 
 ![img_126.png](img_126.png)
 
-When the sort() function compares two values, it sends the values to the compare function, and sorts the values 
+When the sort() function compares two values, it sends the values to the compare function, and sorts the values
 according to the returned (negative, zero, positive) value.
 
 * If the result is negative, a is sorted before b.
@@ -823,18 +893,19 @@ Example:
 
 The compare function compares all the values in the array, two values at a time `(a, b)`.
 When comparing 40 and 100, the `sort()` method calls the compare function(40, 100).
-The function calculates `40 - 100 (a - b)`, and since the result is negative `(-60)`, the sort function will sort` 40` 
+The function calculates `40 - 100 (a - b)`, and since the result is negative `(-60)`, the sort function will sort`40`
 as a value lower than`100`.
 
-De la misma manera que en el ejemplo anterior el método `.sort()` va a ordenar listas de objetos comparando el mismo 
-valor de cada objeto. 
+De la misma manera que en el ejemplo anterior el método `.sort()` va a ordenar listas de objetos comparando el mismo
+valor de cada objeto.
 
-Orden por edad: 
+Orden por edad:
 
 ![img_128.png](img_128.png)
 
 ### Comparación entre dos listas _parte 2 del video_
-#### Primero vemos el método `.every()` en una sola lista.
+
+#### Primero vemos el método `.every()` en una sola lista
 
 El método `.every()` va a chequear si todos los valores del array pasan una condición.
 
@@ -844,7 +915,7 @@ Esta función callback me retorna true si el tipo de todos los valores es num, e
 
 ![img_129.png](img_129.png)
 
-Un ejemplo similar es comparando si son mayores a 0 
+Un ejemplo similar es comparando si son mayores a 0
 
 ![img_130.png](img_130.png)
 
@@ -852,7 +923,7 @@ MANERA MÁS SINTÁCTICA
 
 ![img_131.png](img_131.png)
 
-#### Ahora ya conociendo `.every()` vemos como comparar.
+#### Ahora ya conociendo `.every()` vemos como comparar
 
 Importante!!! ![img_132.png](img_132.png)
 
@@ -861,18 +932,24 @@ hacer un trabajo más pesado. Si no son iguales va a salir de la Función.
 
 ![img_133.png](img_133.png)
 
-Luego en la misma función: ---  De esta manera compara el valor en el mismo índice de cada array. 
+Luego en la misma función: ---  De esta manera compara el valor en el mismo índice de cada array.
 
-![img_134.png](img_134.png) 
+![img_134.png](img_134.png)
 
 ### Identificar si existe un valor en un array y objetos iterables
 
-`.some()` significa alguno, a diferencia del every en el que todos deben cumplir una condición con some alcanza con que 
+`.some()` significa alguno, a diferencia del every en el que todos deben cumplir una condición con some alcanza con que
 la cumplan algunos.
 
 ![img_135.png](img_135.png)
 
 Con esta sintaxis pregunto si existe un determinado elemento en el objeto.
+
+### Algo de Alura
+
+![img_168.png](img_168.png)
+
+![img_169.png](img_169.png)
 
 #### Ejercicio 6 finalizado
 
@@ -880,19 +957,19 @@ Con esta sintaxis pregunto si existe un determinado elemento en el objeto.
 
 ### Trabajando con Sets (conjuntos)
 
-Una de las características de los sets es que no nos permiten almacenar valores repetidos, si agregamos valores iguales 
+Una de las características de los sets es que no nos permiten almacenar valores repetidos, si agregamos valores iguales
 solo guarda el primero. (en caso de variables, no de objetos porque estos últimos tienen diferente espacio en memoria)
 
-https://www.w3schools.com/js/js_sets.asp Aquí explica los métodos
+<https://www.w3schools.com/js/js_sets.asp> Aquí explica los métodos
 
-Con el factor de propagación `[...]` convierto un set en array y con esto me aseguro de que el mismo no tiene valores 
+Con el factor de propagación `[...]` convierto un set en array y con esto me aseguro de que el mismo no tiene valores
 repetidos.
 
 ### Trabajando con objetos (se usan mucho en react)
 
 En este objeto trabaja de 2 maneras distintas:
 
-1. key: + Valor entre "comillas" 
+1. key: + Valor entre "comillas"
 2. key entre"comillas": + valor como un array  
 
 ![img_136.png](img_136.png)
@@ -903,16 +980,23 @@ Ambos se pueden combinar en el mismo objeto
 
 Código en el archivo fecha.js muy sencillo.
 
-### ejercicios:
+### ejercicios
 
 1. En mi resolución creé un array y lo transformé en set, el Ob directamente declaran todo junto.
+
 ![img_137.png](img_137.png)
-2. En mi resolución iba bien hasta que usé un objeto dentro de la lista de objetos, la solución era usar el 
+
+2. En mi resolución iba bien hasta que usé un objeto dentro de la lista de objetos, la solución era usar el
 factor de propagación ***dentro del objeto***
+
 ![img_138.png](img_138.png)
+
 3. La resolución fue igual a la propuesta en OB
+
 4. Consola
+
 ![img_140.png](img_140.png)
+
 ![img_141.png](img_141.png)
 
 ## Clase 8 Introducción a las funciones
@@ -921,25 +1005,25 @@ factor de propagación ***dentro del objeto***
 
 * _**Son Bloques de código que se ejecutan con un fin específico**_
 
-A las funciones les puedo pasar una variable o directamente un valor como parámetro, es muy importante para no cometer 
+A las funciones les puedo pasar una variable o directamente un valor como parámetro, es muy importante para no cometer
 graves errores diferenciar cuando usamos datos primitivos o cuando usamos por ejemplo objetos, esto trae aparejado pasar
 por **valor** o por **referencia**.
 
-En el ejemplo en el código cuando paso por valor una variable y modifico el parámetro dentro de la misma no cambia 
-al original, pero cuando uso un objeto (_paso por referencia_) este cambia al objeto original por usar el mismo espacio 
+En el ejemplo en el código cuando paso por valor una variable y modifico el parámetro dentro de la misma no cambia
+al original, pero cuando uso un objeto (_paso por referencia_) este cambia al objeto original por usar el mismo espacio
 en memoria.
 
-Ver el código que está bien documentado: (https://github.com/GustavoMinchiotti/JavaScript-OB/blob/main/Clase%208/01%20Intro%20funciones.js)
+Ver el código que está bien documentado: (<https://github.com/GustavoMinchiotti/JavaScript-OB/blob/main/Clase%208/01%20Intro%20funciones.js>)
 
-![img_143.png](img_143.png) 
+![img_143.png](img_143.png)
 
 Parámetros por defecto u opcionales --- si no le paso nada imprime 7 sino imprime lo que le pase.
 
-https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/return 
+<https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/return>
 
 ##### Return
 
-La sentencia `return`finaliza la ejecución de la función y especifica un valor para ser devuelto a quien llama a la 
+La sentencia `return`finaliza la ejecución de la función y especifica un valor para ser devuelto a quien llama a la
 función. Si se omite, `undefined` es retornado en su lugar.
 
 ### Funciones tipo flecha - funciones anónimas
@@ -949,7 +1033,7 @@ Las funciones de flecha nos permiten escribir una sintaxis de función más cort
 
 ![img_144.png](img_144.png) -- ![img_145.png](img_145.png)
 
-¡Se hace más corto! Si la función tiene solo una declaración y la declaración devuelve un valor, puede quitar los 
+¡Se hace más corto! Si la función tiene solo una declaración y la declaración devuelve un valor, puede quitar los
 corchetes y el return palabra reservada:
 
 ![img_146.png](img_146.png)
@@ -968,8 +1052,9 @@ Si tiene parámetros, los pasa dentro de los paréntesis:
 
 ### Funciones asíncronas
 
-En ellas trabajamos con datos externos y pasamos a depender de sus tiempos... 
-* Hace una llamada a una base de datos externa --- no conocemos su calidad 
+En ellas trabajamos con datos externos y pasamos a depender de sus tiempos...
+
+* Hace una llamada a una base de datos externa --- no conocemos su calidad
 * Puede darnos algún error
 
 ![img_150.png](img_150.png)
@@ -980,7 +1065,7 @@ Se resuelven a partir de promesas **_Ver este tema en varias plataformas_**
 
 * la sintaxis es agregando un *
 * en el ejemplo es un iterador incremental con paso 1
-* para llamarla y que no vuelva a comenzar desde `0` guardo el valor en una **variable const** esta se transforma en un 
+* para llamarla y que no vuelva a comenzar desde `0` guardo el valor en una **variable const** esta se transforma en un
 `objeto generador`.
 * la sintaxis para entrar al `objeto generador` y a la función es con el método `.next()`
 * para poder salir de la función utilizo la palabra reservada `yield` es como un `return` solo que espera ahi hasta que
@@ -989,17 +1074,18 @@ se vuelva a llamar
 
 ![img_151.png](img_151.png)
 
-_Si llamo a la func. sin el .value al final retorna esto:_ 
+_Si llamo a la func. sin el .value al final retorna esto:_
 
 ![img_153.png](img_153.png)
 ![img_152.png](img_152.png)
 
 ## Clase 9 Gestión de errores
+
 ### Errores en Js
 
-https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Error
+<https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Error>
 
-Palabra reservada **throw** se utiliza en la gestión de errores en el ejemplo de la función si da error arroja el 
+Palabra reservada **throw** se utiliza en la gestión de errores en el ejemplo de la función si da error arroja el
 mensaje dado, pero en este caso también detiene la ejecución.
 
 ![img_154.png](img_154.png) --- ![img_155.png](img_155.png)
@@ -1019,10 +1105,10 @@ En esta clase creamos un paquete Json pero de forma abreviada con la sintaxis `n
 
 ![img_158.png](img_158.png)
 
-Reemplazamos la parte de test por: `"start": "node index.js "` y tambien el nombre de archivo porque tomo por defecto el 
-de la clase anterior. 
+Reemplazamos la parte de test por: `"start": "node index.js "` y tambien el nombre de archivo porque tomo por defecto el
+de la clase anterior.
 
-console.log("este es un mensaje por consola, utilizando la sintaxis: npm start /// desde la consola");
+`console.log("este es un mensaje por consola, utilizando la sintaxis: npm start /// desde la consola");`
 
 ![img_159.png](img_159.png)
 
@@ -1030,7 +1116,7 @@ Uso el archivo desde la terminal con json NO con f5 en .JS
 
 Librería: **_winston npm_** _para gestionar los logs de manera profesional_
 
-https://www.npmjs.com/package/winston
+<https://www.npmjs.com/package/winston>
 
 Lo instalamos en la carpeta donde estamos trabajando con las sintaxis: `npm install winston`
 
@@ -1059,22 +1145,10 @@ terminal.
 ![img_165.png](img_165.png)
 
 ![img_166.png](img_166.png)
-**_Niveles de error en Winston_**   
+**_Niveles de error en Winston_**
 
 ### Creó un nuevo archivo dentro de una carpeta "logger" donde pegó el objeto logger y lo exporto para todo el proyecto
+
 Luego lo importo desde el index.js `((((no lo hice porque en la clase 10 vamos a trabajar con paquetes))))`
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .
