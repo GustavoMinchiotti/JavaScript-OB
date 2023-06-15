@@ -9,8 +9,9 @@ const logger = winston.createLogger({
     // - Write all logs with importance level of `error` or less to `error.log`
     // - Write all logs with importance level of `info` or less to `combined.log`
     //
-    new winston.transports.File({ filename: "error.log", level: "error" }),
-    new winston.transports.File({ filename: "combined.log" }),
+    new winston.transports.Console(),
+    new winston.transports.File({ filename: "error.log", level: "error" }), //crea archivo nuevo o modifica existente //* esta línea me dice que nivel va a guardar
+    new winston.transports.File({ filename: "combined.log" }), //crea archivo nuevo o modifica existente
   ],
 });
 
@@ -21,3 +22,4 @@ logger.warn("mensaje de advertencia");
 logger.error("mensaje de error");
 
 //! 13/06/2023 retomé este curso luego de alura y volví a instalar Winston
+//? Haciendo ahora luego de instalado npm start me crea 2 archivos .log

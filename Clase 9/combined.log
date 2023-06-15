@@ -1,3 +1,8 @@
 {"level":"info","message":"mensaje informativo","service":"user-service"}
 {"level":"warn","message":"mensaje de advertencia","service":"user-service"}
 {"level":"error","message":"mensaje de error","service":"user-service"}
+
+//estos son al retomar el curso
+{"level":"info","message":"mensaje informativo","service":"user-service"}
+{"level":"warn","message":"mensaje de advertencia","service":"user-service"}
+{"level":"error","message":"mensaje de error","service":"user-service"}

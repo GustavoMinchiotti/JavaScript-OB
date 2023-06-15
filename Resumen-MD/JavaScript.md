@@ -1151,4 +1151,27 @@ terminal.
 
 Luego lo importo desde el index.js `((((no lo hice porque en la clase 10 vamos a trabajar con paquetes))))`
 
+Los transportes == `new winston.transports.File({ filename: "error.log", level: "error" }),` son acciones que se van a ejecutar 
+cada vez que haya un log. 
+
+Le agregué el == `new winston.transports.Console(),` y me muestra en consola los errores aparte de crear los log
+Se puede hacer una carpeta aparte y crear un módulo para el logger.
+
+El ejercicio lo bajé de resueltos para seguir más rápido.
+
+#### Ej-9 
+* repetí los pasos de la clase: 1- creé index.js
+* 2- inicié npm = npm init -y
+* 3- instalé winston en la carpeta: npm install winston
+* 4- le di inicio con: npm start
+* 5- copié el try catch de los ejercicios resueltos
+* 6- Para el ejercicio le cambié el nivel a error
+* Solo descargo 2 capturas de pantalla el resto buscar en el código.
+
+![img_170.png](img_170.png)
+
+![img_171.png](img_171.png)
+
+
+
 .
