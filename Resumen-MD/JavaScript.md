@@ -1172,6 +1172,70 @@ El ejercicio lo bajé de resueltos para seguir más rápido.
 
 ![img_171.png](img_171.png)
 
+## Clase 10 Módulos con CommonJs
+
+A diferencia del instructor voy a hacer varios index para separar los modos y sintaxis
+
+### 10.1 En esta clase explica y crea módulos con la forma antigua CommonJs (required) y la de ECMA6 import
+* El énfasis está en la manera antigua su exportación y sintaxis. Explicado en los comentarios
+
+![img_172.png](img_172.png)
+
+![img_173.png](img_173.png) 
+
+* Los 3 puntos en required son la recomendación de usar los módulos nuevos
+
+### 10.2
+
+Para comenzar:
+* Creo una carpeta de módulos-es6
+* Inicio node en la misma
+
+![img_174.png](img_174.png)
+
+* Dentro de la carpeta creo a su vez una carpeta de módulos y dentro de ella copio `matematicas.js`
+* Para poder exportar en el archivo JSON le indico el tipo de export: hay 2 opciones, `common` y `module`.
+
+![img_175.png](img_175.png)
+
+* En el módulo `matematicas.js` a cada función le agrego antes la palabra `export`
+
+Una de las formas de exportar
+
+![img_176.png](img_176.png)
+
+* Para exportar por defecto "Export default": **Solo una por defecto y las que quiera por nombre**
+
+![img_177.png](img_177.png)
+
+* de esta manera lo importo y utilizo llamando a la función
+
+![img_178.png](img_178.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .
