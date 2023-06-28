@@ -1212,7 +1212,25 @@ Una de las formas de exportar
 
 ![img_178.png](img_178.png)
 
+### Ejemplo de librerías: 
 
+La instalo con NPM, en este ejemplo usamos **AXIOS** para consultar una API 
+
+* creada la carpeta librerias de la clase hago un init de npm. `npm init -y`
+* agrego el type module al json
+* tambien modifico y creo el `start : "node index.js"`
+* con npm i axios instalo.
+* ![img_179.png](img_179.png)
+* Con axios llamamos a un servicio externo "pokeapi"
+* Importo la libreria en el index.js
+* Para usarlo copio el pedido desde la pagina : https://www.npmjs.com/package/axios
+* Llamo a la api con su url
+* ![img_180.png](img_180.png)
+* modifiqué a `response.data` para obtener la data específica del poke, de lo contrario baja muchos mas datos
+* con npm start "porque lo modifiqué en el json" llamo a la api y da un montón de datos
+* ![img_181.png](img_181.png)
+
+### 
 
 
 
